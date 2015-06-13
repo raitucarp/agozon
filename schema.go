@@ -181,7 +181,7 @@ type CartCommon struct {
 /* Operation Request */
 type CartAddRequest struct {
 	*CartCommon `xml:",omitempty" json:",omitempty"`
-	Items      CartItems `xml:",omitempty" json:",omitempty"`
+	Items       CartItems `xml:",omitempty" json:",omitempty"`
 }
 
 type CartClearRequest struct {
@@ -228,8 +228,6 @@ type SimilarityLookupRequest struct {
 	ResponseGroup  []string
 	SimilarityType string
 }
-
-
 
 type Accessory struct {
 	ASIN  string `xml:",omitempty" json:",omitempty"`

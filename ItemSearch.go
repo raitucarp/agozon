@@ -1,45 +1,45 @@
 package agozon
 
 import (
+	"net/url"
 	"strconv"
 	"strings"
-	"net/url"
 )
 
 /* ItemSearchRequest */
 type ItemSearchRequest struct {
-	Actor                 string   `xml:",omitempty" json:",omitempty"`
-	Artist                string   `xml:",omitempty" json:",omitempty"`
-	availability          string   `xml:"Availability,omitempty" json:",omitempty"`
-	audienceRating        string   `xml:"AudienceRating,omitempty" json:",omitempty"`
-	Author                string   `xml:",omitempty" json:",omitempty"`
-	Brand                 string   `xml:",omitempty" json:",omitempty"`
-	BrowseNode            int   `xml:",omitempty" json:",omitempty"`
-	Composer              string   `xml:",omitempty" json:",omitempty"`
-	Condition             string   `xml:",omitempty" json:",omitempty"`
-	Conductor             string   `xml:",omitempty" json:",omitempty"`
-	Director              string   `xml:",omitempty" json:",omitempty"`
+	Actor                 string     `xml:",omitempty" json:",omitempty"`
+	Artist                string     `xml:",omitempty" json:",omitempty"`
+	availability          string     `xml:"Availability,omitempty" json:",omitempty"`
+	audienceRating        string     `xml:"AudienceRating,omitempty" json:",omitempty"`
+	Author                string     `xml:",omitempty" json:",omitempty"`
+	Brand                 string     `xml:",omitempty" json:",omitempty"`
+	BrowseNode            int        `xml:",omitempty" json:",omitempty"`
+	Composer              string     `xml:",omitempty" json:",omitempty"`
+	Condition             string     `xml:",omitempty" json:",omitempty"`
+	Conductor             string     `xml:",omitempty" json:",omitempty"`
+	Director              string     `xml:",omitempty" json:",omitempty"`
 	ItemPage              uint64     `xml:",omitempty" json:",omitempty"`
-	keywords              string   `xml:"Keywords,omitempty" json:",omitempty"`
-	Manufacturer          string   `xml:",omitempty" json:",omitempty"`
+	keywords              string     `xml:"Keywords,omitempty" json:",omitempty"`
+	Manufacturer          string     `xml:",omitempty" json:",omitempty"`
 	MaximumPrice          uint64     `xml:",omitempty" json:",omitempty"`
-	MerchantId            string   `xml:",omitempty" json:",omitempty"`
+	MerchantId            string     `xml:",omitempty" json:",omitempty"`
 	MinimumPrice          uint64     `xml:",omitempty" json:",omitempty"`
-	MinPercentageOff      uint64   `xml:",omitempty" json:",omitempty"`
-	MusicLabel            string   `xml:",omitempty" json:",omitempty"`
-	Orchestra             string   `xml:",omitempty" json:",omitempty"`
+	MinPercentageOff      uint64     `xml:",omitempty" json:",omitempty"`
+	MusicLabel            string     `xml:",omitempty" json:",omitempty"`
+	Orchestra             string     `xml:",omitempty" json:",omitempty"`
 	Power                 url.Values `xml:",omitempty" json:",omitempty"`
-	Publisher             string   `xml:",omitempty" json:",omitempty"`
-	RelatedItemPage       string   `xml:",omitempty" json:",omitempty"`
-	RelationshipType      []string `xml:",omitempty" json:",omitempty"`
-	responseGroup         []string `xml:"ResponseGroup,omitempty" json:",omitempty"`
-	SearchIndex           string   `xml:",omitempty" json:",omitempty"`
-	Sort                  string   `xml:",omitempty" json:",omitempty"`
-	Title                 string   `xml:",omitempty" json:",omitempty"`
-	ReleaseDate           string   `xml:",omitempty" json:",omitempty"`
-	TruncateReviewsAt     uint64 		`xml:",omitempty" json:",omitempty"`
-	IncludeReviewsSummary bool     `xml:",omitempty" json:",omitempty"`
-	locale string
+	Publisher             string     `xml:",omitempty" json:",omitempty"`
+	RelatedItemPage       string     `xml:",omitempty" json:",omitempty"`
+	RelationshipType      []string   `xml:",omitempty" json:",omitempty"`
+	responseGroup         []string   `xml:"ResponseGroup,omitempty" json:",omitempty"`
+	SearchIndex           string     `xml:",omitempty" json:",omitempty"`
+	Sort                  string     `xml:",omitempty" json:",omitempty"`
+	Title                 string     `xml:",omitempty" json:",omitempty"`
+	ReleaseDate           string     `xml:",omitempty" json:",omitempty"`
+	TruncateReviewsAt     uint64     `xml:",omitempty" json:",omitempty"`
+	IncludeReviewsSummary bool       `xml:",omitempty" json:",omitempty"`
+	locale                string
 	do                    func() (ItemSearchResponse, error)
 	validate              func() map[string]string
 }
@@ -120,7 +120,7 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 
 	// validate item search request,
 	// returning maps of string to add as queries
-	req.validate = func() (map[string]string) {
+	req.validate = func() map[string]string {
 		m := map[string]string{}
 		// Name of an actor associated with the item.
 		// You can enter all or part of the name.
@@ -294,7 +294,7 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		m["Power"] = req.Power.Encode()
 
 		// Name of a publisher associated with the item. You can enter all or part of the name.
-		m["Publisher"] =  req.Publisher
+		m["Publisher"] = req.Publisher
 
 		// This optional parameter is only valid when the RelatedItems response group is used.
 		// Each ItemLookup request can return, at most, ten related items.
@@ -303,10 +303,9 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		m["RelatedItemPage"] = req.RelatedItemPage
 
 		/*
-		RelatedItemPage
-		RelationshipType*/
+			RelatedItemPage
+			RelationshipType*/
 		m["SearchIndex"] = req.SearchIndex
-
 
 		/*Sort
 		Title
@@ -323,7 +322,6 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 	req.do = func() (response ItemSearchResponse, err error) {
 		// validate the request parameters
 		q := req.validate()
-
 
 		// add queries to api request
 		r.AddParams(q)

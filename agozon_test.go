@@ -1,8 +1,8 @@
 package agozon
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestItemSearchRequest(t *testing.T) {
@@ -25,7 +25,7 @@ func TestItemSearchRequest(t *testing.T) {
 
 	/*for _, error := range response.OperationRequest.Errors {
 
-			}*/
+													}*/
 	fmt.Println("length of error", response.Items.Request.Errors)
 
 	items := response.GetItems()

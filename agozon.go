@@ -6,7 +6,7 @@ type Config struct {
 	AssociateTag    string
 	AWSAccessKeyId  string
 	SecretAccessKey string
-	Locale string
+	Locale          string
 }
 
 // Create new Agozon request.
@@ -15,7 +15,7 @@ func NewRequest(c *Config) (r Request) {
 		AssociateTag    string
 		AWSAccessKeyId  string
 		SecretAccessKey string
-		Locale string
+		Locale          string
 	)
 
 	// Get AssociateTag from environment variable.
@@ -63,7 +63,5 @@ func NewRequest(c *Config) (r Request) {
 	r.SetLocale(Locale)
 	r.create(AssociateTag, AWSAccessKeyId, SecretAccessKey)
 
-
 	return
 }
-

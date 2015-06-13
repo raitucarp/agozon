@@ -140,7 +140,7 @@ const (
 	// Bestselling
 	SortSalesRank = "salesrank"
 	// Most popular
-	SortSongTItleRank = "songtitlerank"
+	SortSongTitleRank = "songtitlerank"
 	// Bestselling
 	SortSubslotSalesRank = "subslot-salesrank"
 
