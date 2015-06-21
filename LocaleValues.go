@@ -7,7 +7,16 @@ type LocaleSearchIndex struct {
 	ItemSearchParameters []string `json:"ItemSearchParameters"`
 }
 
-var LocaleInformation = []map[string]LocaleSearchIndex{
-	LocaleBRMap, LocaleCAMap, LocaleCNMap, LocaleDEMap, LocaleESMap, LocaleFRMap, LocaleINMap,
-	LocaleITMap, LocaleJPMap, LocaleUKMap, LocaleUSMap,
+var LocaleInformation = map[string]map[string]LocaleSearchIndex{
+	"BR": LocaleBRMap,
+	"CA": LocaleCAMap,
+	"CN": LocaleCNMap,
+	"DE": LocaleDEMap,
+	"ES": LocaleESMap,
+	"FR": LocaleFRMap,
+	"IN": LocaleINMap,
+	"IT": LocaleITMap,
+	"JP": LocaleJPMap,
+	"UK": LocaleUKMap,
+	"US": LocaleUSMap,
 }
