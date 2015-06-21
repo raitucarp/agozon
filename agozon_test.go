@@ -23,9 +23,7 @@ func TestItemSearchRequest(t *testing.T) {
 	}
 	fmt.Println(response)
 
-	/*for _, error := range response.OperationRequest.Errors {
-
-																												}*/
+	/*for _, error := range response.OperationRequest.Errors {}*/
 	fmt.Println("length of error", response.Items.Request.Errors)
 
 	items := response.GetItems()

@@ -1,5 +1,14 @@
 package agozon
 
+var LocaleUKMap = map[string]LocaleSearchIndex{
+	"All": LocaleUK.All, "Apparel": LocaleUK.Apparel, "Appliances": LocaleUK.Appliances, "Automotive": LocaleUK.Automotive, "Baby": LocaleUK.Baby, "Beauty": LocaleUK.Beauty,
+	"Blended": LocaleUK.Blended, "Books": LocaleUK.Books, "Classical": LocaleUK.Classical, "DVD": LocaleUK.DVD, "Electronics": LocaleUK.Electronics, "Grocery": LocaleUK.Grocery, "HealthPersonalCare": LocaleUK.HealthPersonalCare,
+	"HomeGarden": LocaleUK.HomeGarden, "HomeImprovement": LocaleUK.HomeImprovement, "Jewelry": LocaleUK.Jewelry, "KindleStore": LocaleUK.KindleStore, "Kitchen": LocaleUK.Kitchen, "Lighting": LocaleUK.Lighting, "Luggage": LocaleUK.Luggage, "MP3Downloads": LocaleUK.MP3Downloads,
+	"MobileApps": LocaleUK.MobileApps, "Music": LocaleUK.Music, "MusicTracks": LocaleUK.MusicTracks, "MusicalInstruments": LocaleUK.MusicalInstruments, "OfficeProducts": LocaleUK.OfficeProducts, "OutdoorLiving": LocaleUK.OutdoorLiving, "Outlet": LocaleUK.Outlet, "PCHardware": LocaleUK.PCHardware,
+	"PetSupplies": LocaleUK.PetSupplies, "Shoes": LocaleUK.Shoes, "Software": LocaleUK.Software, "SoftwareVideoGames": LocaleUK.SoftwareVideoGames, "SportingGoods": LocaleUK.SportingGoods, "Tools": LocaleUK.Tools, "Toys": LocaleUK.Toys,
+	"UnboxVideo": LocaleUK.UnboxVideo, "VHS": LocaleUK.VHS, "Video": LocaleUK.Video, "VideoGames": LocaleUK.VideoGames, "Watches": LocaleUK.Watches,
+}
+
 var LocaleUK = struct {
 	All, Apparel, Appliances, Automotive, Baby, Beauty,
 	Blended, Books, Classical, DVD, Electronics, Grocery, HealthPersonalCare,

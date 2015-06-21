@@ -1,6 +1,18 @@
 package agozon
 
-var LocalCA = struct {
+// LocalCA Map
+var LocaleCAMap = map[string]LocaleSearchIndex{
+	"All": LocaleCA.All, "Automotive": LocaleCA.Automotive, "Baby": LocaleCA.Baby, "Beauty": LocaleCA.Beauty, "Blended": LocaleCA.Blended, "Books": LocaleCA.Books,
+	"Classical": LocaleCA.Classical, "DVD": LocaleCA.DVD, "Electronics": LocaleCA.Electronics, "ForeignBooks": LocaleCA.ForeignBooks, "Grocery": LocaleCA.Grocery,
+	"HealthPersonalCare": LocaleCA.HealthPersonalCare, "Jewelry": LocaleCA.Jewelry, "KindleStore": LocaleCA.KindleStore, "Kitchen": LocaleCA.Kitchen,
+	"LawnAndGarden": LocaleCA.LawnAndGarden, "Luggage": LocaleCA.Luggage, "Music": LocaleCA.Music, "MusicalInstruments": LocaleCA.MusicalInstruments,
+	"OfficeProducts": LocaleCA.OfficeProducts, "PetSupplies": LocaleCA.PetSupplies, "Software": LocaleCA.Software, "SoftwareVideoGames": LocaleCA.SoftwareVideoGames,
+	"SportingGoods": LocaleCA.SportingGoods, "Tools": LocaleCA.Tools, "Toys": LocaleCA.Toys, "VHS": LocaleCA.VHS, "Video": LocaleCA.Video, "VideoGames": LocaleCA.VideoGames,
+	"Watches": LocaleCA.Watches,
+}
+
+// Local CA
+var LocaleCA = struct {
 	All, Automotive, Baby, Beauty, Blended, Books,
 	Classical, DVD, Electronics, ForeignBooks, Grocery,
 	HealthPersonalCare, Jewelry, KindleStore, Kitchen,

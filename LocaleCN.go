@@ -1,5 +1,15 @@
 package agozon
 
+var LocaleCNMap = map[string]LocaleSearchIndex{
+	"All": LocaleCN.All, "Apparel": LocaleCN.Apparel, "Appliances": LocaleCN.Appliances,
+	"Automotive": LocaleCN.Automotive, "Baby": LocaleCN.Baby, "Beauty": LocaleCN.Beauty, "Books": LocaleCN.Books,
+	"Electronics": LocaleCN.Electronics, "Grocery": LocaleCN.Grocery, "HealthPersonalCare": LocaleCN.HealthPersonalCare,
+	"Home": LocaleCN.Home, "HomeImprovement": LocaleCN.HomeImprovement, "Jewelry": LocaleCN.Jewelry, "KindleStore": LocaleCN.KindleStore, "Music": LocaleCN.Music,
+	"MusicalInstruments": LocaleCN.MusicalInstruments, "OfficeProducts": LocaleCN.OfficeProducts, "PetSupplies": LocaleCN.PetSupplies, "Photo": LocaleCN.Photo,
+	"Shoes": LocaleCN.Shoes, "Software": LocaleCN.Software, "SportingGoods": LocaleCN.SportingGoods, "Toys": LocaleCN.Toys,
+	"Video": LocaleCN.Video, "VideoGames": LocaleCN.VideoGames, "Watches": LocaleCN.Watches,
+}
+
 var LocaleCN = struct {
 	All, Apparel, Appliances,
 	Automotive, Baby, Beauty, Books,

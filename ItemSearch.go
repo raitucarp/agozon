@@ -39,6 +39,7 @@ type ItemSearchRequest struct {
 	ReleaseDate           string     `xml:",omitempty" json:",omitempty"`
 	TruncateReviewsAt     uint64     `xml:",omitempty" json:",omitempty"`
 	IncludeReviewsSummary bool       `xml:",omitempty" json:",omitempty"`
+	VariationPage         uint64
 	locale                string
 	do                    func() (ItemSearchResponse, error)
 	validate              func() map[string]string
@@ -307,11 +308,29 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 			RelationshipType*/
 		m["SearchIndex"] = req.SearchIndex
 
-		/*Sort
-		Title
-		TruncateReviewsAt
-		VariationPage
-		ResponseGroup*/
+		m["Sort"] = req.Sort
+
+		// The title associated with the item. You can enter all or part of the title.
+		// Title searches are a subset of Keyword searches.
+		// If a Title search yields insufficient results, consider using a Keywords search.
+		m["Title"] = req.Title
+
+		// By default, reviews are truncated to 1000 characters within the Reviews iframe.
+		// To specify a different length, enter the value.
+		// To return complete reviews, specify 0.
+		m["TruncateReviewsAt"] = req.TruncateReviewsAt
+
+		// Retrieves a specific page of variations returned by ItemSearch.
+		// By default, ItemSearch returns all variations.
+		// Use VariationPage to return a subsection of the response.
+		// There are 10 variations per page.
+		// To examine offers 11 trough 20, for example, set VariationPage to 2.
+		// The total number of pages is returned in the TotalPages element.
+		if req.VariationPage == 0 {
+			m["VariationPage"] = ""
+		} else {
+			m["VariationPage"] = strconv.FormatUint(req.VariationPage, 10)
+		}
 
 		r.SetResponseGroup(req.responseGroup...)
 

@@ -6,3 +6,8 @@ type LocaleSearchIndex struct {
 	SortValues           []string `json:"SortValues"`
 	ItemSearchParameters []string `json:"ItemSearchParameters"`
 }
+
+var LocaleInformation = []map[string]LocaleSearchIndex{
+	LocaleBRMap, LocaleCAMap, LocaleCNMap, LocaleDEMap, LocaleESMap, LocaleFRMap, LocaleINMap,
+	LocaleITMap, LocaleJPMap, LocaleUKMap, LocaleUSMap,
+}

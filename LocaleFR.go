@@ -1,5 +1,15 @@
 package agozon
 
+var LocaleFRMap = map[string]LocaleSearchIndex{
+	"All": LocaleFR.All, "Apparel": LocaleFR.Apparel, "Appliances": LocaleFR.Appliances, "Automotive": LocaleFR.Automotive,
+	"Baby": LocaleFR.Baby, "Beauty": LocaleFR.Beauty, "Blended": LocaleFR.Blended, "Books": LocaleFR.Books, "Classical": LocaleFR.Classical, "DVD": LocaleFR.DVD,
+	"Electronics": LocaleFR.Electronics, "ForeignBooks": LocaleFR.ForeignBooks, "GiftCards": LocaleFR.GiftCards, "HealthPersonalCare": LocaleFR.HealthPersonalCare, "HomeImprovement": LocaleFR.HomeImprovement,
+	"Jewelry": LocaleFR.Jewelry, "KindleStore": LocaleFR.KindleStore, "Kitchen": LocaleFR.Kitchen, "LawnAndGarden": LocaleFR.LawnAndGarden, "Lighting": LocaleFR.Lighting, "Luggage": LocaleFR.Luggage, "MP3Downloads": LocaleFR.MP3Downloads,
+	"MobileApps": LocaleFR.MobileApps, "Music": LocaleFR.Music, "MusicTracks": LocaleFR.MusicTracks, "MusicalInstruments": LocaleFR.MusicalInstruments, "OfficeProducts": LocaleFR.OfficeProducts, "PCHardware": LocaleFR.PCHardware,
+	"PetSupplies": LocaleFR.PetSupplies, "Shoes": LocaleFR.Shoes, "Software": LocaleFR.Software, "SoftwareVideoGames": LocaleFR.SoftwareVideoGames, "SportingGoods": LocaleFR.SportingGoods,
+	"Toys": LocaleFR.Toys, "VHS": LocaleFR.VHS, "Video": LocaleFR.Video, "VideoGames": LocaleFR.VideoGames, "Watches": LocaleFR.Watches,
+}
+
 var LocaleFR = struct {
 	All, Apparel, Appliances, Automotive,
 	Baby, Beauty, Blended, Books, Classical, DVD,

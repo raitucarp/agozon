@@ -1,5 +1,16 @@
 package agozon
 
+var LocaleDEMap = map[string]LocaleSearchIndex{
+	"All": LocaleDE.All, "Apparel": LocaleDE.Apparel, "Appliances": LocaleDE.Appliances, "Automotive": LocaleDE.Automotive, "Baby": LocaleDE.Baby, "Beauty": LocaleDE.Beauty,
+	"Blended": LocaleDE.Blended, "Books": LocaleDE.Books, "Classical": LocaleDE.Classical, "DVD": LocaleDE.DVD, "Electronics": LocaleDE.Electronics,
+	"ForeignBooks": LocaleDE.ForeignBooks, "GiftCards": LocaleDE.GiftCards, "Grocery": LocaleDE.Grocery, "HealthPersonalCare": LocaleDE.HealthPersonalCare,
+	"HomeGarden": LocaleDE.HomeGarden, "HomeImprovement": LocaleDE.HomeImprovement, "Jewelry": LocaleDE.Jewelry, "KindleStore": LocaleDE.KindleStore, "Kitchen": LocaleDE.Kitchen,
+	"Lighting": LocaleDE.Lighting, "Luggage": LocaleDE.Luggage, "MP3Downloads": LocaleDE.MP3Downloads, "Magazines": LocaleDE.Magazines, "MobileApps": LocaleDE.MobileApps, "Music": LocaleDE.Music,
+	"MusicTracks": LocaleDE.MusicTracks, "MusicalInstruments": LocaleDE.MusicalInstruments, "OfficeProducts": LocaleDE.OfficeProducts, "OutdoorLiving": LocaleDE.OutdoorLiving, "Outlet": LocaleDE.Outlet, "PCHardware": LocaleDE.PCHardware,
+	"PetSupplies": LocaleDE.PetSupplies, "Photo": LocaleDE.Photo, "Shoes": LocaleDE.Shoes, "Software": LocaleDE.Software, "SoftwareVideoGames": LocaleDE.SoftwareVideoGames, "SportingGoods": LocaleDE.SportingGoods, "Tools": LocaleDE.Tools, "Toys": LocaleDE.Toys,
+	"UnboxVideo": LocaleDE.UnboxVideo, "VHS": LocaleDE.VHS, "Video": LocaleDE.Video, "VideoGames": LocaleDE.VideoGames, "Watches": LocaleDE.Watches,
+}
+
 var LocaleDE = struct {
 	All, Apparel, Appliances, Automotive, Baby, Beauty,
 	Blended, Books, Classical, DVD, Electronics,

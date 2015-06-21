@@ -1,5 +1,14 @@
 package agozon
 
+var LocaleJPMap = map[string]LocaleSearchIndex{
+	"All": LocaleJP.All, "Apparel": LocaleJP.Apparel, "Appliances": LocaleJP.Appliances, "Automotive": LocaleJP.Automotive, "Baby": LocaleJP.Baby,
+	"Beauty": LocaleJP.Beauty, "Blended": LocaleJP.Blended, "Books": LocaleJP.Books, "Classical": LocaleJP.Classical, "DVD": LocaleJP.DVD, "Electronics": LocaleJP.Electronics,
+	"ForeignBooks": LocaleJP.ForeignBooks, "GiftCards": LocaleJP.GiftCards, "Grocery": LocaleJP.Grocery, "HealthPersonalCare": LocaleJP.HealthPersonalCare, "Hobbies": LocaleJP.Hobbies, "HomeImprovement": LocaleJP.HomeImprovement, "Jewelry": LocaleJP.Jewelry, "KindleStore": LocaleJP.KindleStore,
+	"Kitchen": LocaleJP.Kitchen, "MP3Downloads": LocaleJP.MP3Downloads, "MobileApps": LocaleJP.MobileApps, "Music": LocaleJP.Music, "MusicTracks": LocaleJP.MusicTracks, "MusicalInstruments": LocaleJP.MusicalInstruments, "OfficeProducts": LocaleJP.OfficeProducts, "PCHardware": LocaleJP.PCHardware,
+	"PetSupplies": LocaleJP.PetSupplies, "Shoes": LocaleJP.Shoes, "Software": LocaleJP.Software, "SportingGoods": LocaleJP.SportingGoods, "Toys": LocaleJP.Toys,
+	"VHS": LocaleJP.VHS, "Video": LocaleJP.Video, "VideoDownload": LocaleJP.VideoDownload, "VideoGames": LocaleJP.VideoGames, "Watches": LocaleJP.Watches,
+}
+
 var LocaleJP = struct {
 	All, Apparel, Appliances, Automotive, Baby,
 	Beauty, Blended, Books, Classical, DVD, Electronics,

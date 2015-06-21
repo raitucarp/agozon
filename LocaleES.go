@@ -1,5 +1,14 @@
 package agozon
 
+var LocaleESMap = map[string]LocaleSearchIndex{
+	"All": LocaleES.All, "Apparel": LocaleES.Apparel, "Automotive": LocaleES.Automotive, "Baby": LocaleES.Baby, "Books": LocaleES.Books,
+	"DVD": LocaleES.DVD, "Electronics": LocaleES.Electronics, "ForeignBooks": LocaleES.ForeignBooks, "GiftCards": LocaleES.GiftCards, "HealthPersonalCare": LocaleES.HealthPersonalCare,
+	"Jewelry": LocaleES.Jewelry, "KindleStore": LocaleES.KindleStore, "Kitchen": LocaleES.Kitchen, "Lighting": LocaleES.Lighting,
+	"Luggage": LocaleES.Luggage, "MP3Downloads": LocaleES.MP3Downloads, "MobileApps": LocaleES.MobileApps, "Music": LocaleES.Music,
+	"MusicalInstruments": LocaleES.MusicalInstruments, "OfficeProducts": LocaleES.OfficeProducts, "Shoes": LocaleES.Shoes,
+	"Software": LocaleES.Software, "SportingGoods": LocaleES.SportingGoods, "Tools": LocaleES.Tools, "Toys": LocaleES.Toys, "VideoGames": LocaleES.VideoGames, "Watches": LocaleES.Watches,
+}
+
 var LocaleES = struct {
 	All, Apparel, Automotive, Baby, Books,
 	DVD, Electronics, ForeignBooks, GiftCards, HealthPersonalCare,

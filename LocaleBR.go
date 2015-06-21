@@ -1,5 +1,12 @@
 package agozon
 
+// LocaleBR map
+var LocaleBRMap = map[string]LocaleSearchIndex{
+	"All":         LocaleBR.All,
+	"Books":       LocaleBR.Books,
+	"KindleStore": LocaleBR.KindleStore,
+}
+
 // Locale Information for the BR Marketplace
 var LocaleBR = struct {
 	All, Books, KindleStore LocaleSearchIndex
