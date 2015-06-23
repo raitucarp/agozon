@@ -75,7 +75,7 @@ var LocaleUS = struct {
 	VHS, Video, VideoGames, Watches,
 	Wireless LocaleSearchIndex
 }{
-	All: &LocaleSearchIndex{
+	All: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{},
 		ItemSearchParameters: []string{
@@ -88,7 +88,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Apparel: &LocaleSearchIndex{
+	Apparel: LocaleSearchIndex{
 		BrowseNode: 1036592,
 		SortValues: []string{
 			SortLaunch_DateDesc,
@@ -114,7 +114,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Appliances: &LocaleSearchIndex{
+	Appliances: LocaleSearchIndex{
 		BrowseNode: 2619526011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -140,7 +140,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	ArtsAndCrafts: &LocaleSearchIndex{
+	ArtsAndCrafts: LocaleSearchIndex{
 		BrowseNode: 2617942011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -166,7 +166,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Automotive: &LocaleSearchIndex{
+	Automotive: LocaleSearchIndex{
 		BrowseNode: 15690151,
 		SortValues: []string{
 			SortPriceDesc,
@@ -191,7 +191,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Baby: &LocaleSearchIndex{
+	Baby: LocaleSearchIndex{
 		BrowseNode: 165797011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -216,7 +216,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Beauty: &LocaleSearchIndex{
+	Beauty: LocaleSearchIndex{
 		BrowseNode: 11055981,
 		SortValues: []string{
 			SortLaunch_DateDesc,
@@ -242,7 +242,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Blended: &LocaleSearchIndex{
+	Blended: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{},
 		ItemSearchParameters: []string{
@@ -252,7 +252,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Books: &LocaleSearchIndex{
+	Books: LocaleSearchIndex{
 		BrowseNode: 1000,
 		SortValues: []string{
 			SortPriceDesc,
@@ -284,7 +284,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Classical: &LocaleSearchIndex{
+	Classical: LocaleSearchIndex{
 		BrowseNode: 301668,
 		SortValues: []string{
 			SortOriginalReleaseDateDesc,
@@ -316,7 +316,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Collectibles: &LocaleSearchIndex{
+	Collectibles: LocaleSearchIndex{
 		BrowseNode: 4991426011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -344,7 +344,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	DVD: &LocaleSearchIndex{
+	DVD: LocaleSearchIndex{
 		BrowseNode: 2625374011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -372,7 +372,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	DigitalMusic: &LocaleSearchIndex{
+	DigitalMusic: LocaleSearchIndex{
 		BrowseNode: 624868011,
 		SortValues: []string{
 			SortSongTitleRank,
@@ -393,7 +393,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Electronics: &LocaleSearchIndex{
+	Electronics: LocaleSearchIndex{
 		BrowseNode: 493964,
 		SortValues: []string{
 			SortPriceDesc,
@@ -419,7 +419,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Fashion: &LocaleSearchIndex{
+	Fashion: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -444,7 +444,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	FashionBaby: &LocaleSearchIndex{
+	FashionBaby: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -469,7 +469,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	FashionBoys: &LocaleSearchIndex{
+	FashionBoys: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -494,7 +494,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	FashionGirls: &LocaleSearchIndex{
+	FashionGirls: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -519,7 +519,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	FashionMen: &LocaleSearchIndex{
+	FashionMen: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -544,7 +544,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	FashionWomen: &LocaleSearchIndex{
+	FashionWomen: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -569,7 +569,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	GiftCards: &LocaleSearchIndex{
+	GiftCards: LocaleSearchIndex{
 		BrowseNode: 2864120011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -594,7 +594,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	GourmetFood: &LocaleSearchIndex{
+	GourmetFood: LocaleSearchIndex{
 		BrowseNode: 16310211,
 		SortValues: []string{
 			SortInversePrice,
@@ -620,7 +620,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Grocery: &LocaleSearchIndex{
+	Grocery: LocaleSearchIndex{
 		BrowseNode: 16310211,
 		SortValues: []string{
 			SortInversePrice,
@@ -646,7 +646,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	HealthPersonalCare: &LocaleSearchIndex{
+	HealthPersonalCare: LocaleSearchIndex{
 		BrowseNode: 3760931,
 		SortValues: []string{
 			SortInversePrice,
@@ -672,7 +672,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	HomeGarden: &LocaleSearchIndex{
+	HomeGarden: LocaleSearchIndex{
 		BrowseNode: 1063498,
 		SortValues: []string{
 			SortPriceDesc,
@@ -698,7 +698,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Industrial: &LocaleSearchIndex{
+	Industrial: LocaleSearchIndex{
 		BrowseNode: 16310161,
 		SortValues: []string{
 			SortPriceDesc,
@@ -722,7 +722,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Jewelry: &LocaleSearchIndex{
+	Jewelry: LocaleSearchIndex{
 		BrowseNode: 2516784011,
 		SortValues: []string{
 			SortInversePrice,
@@ -747,7 +747,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	KindleStore: &LocaleSearchIndex{
+	KindleStore: LocaleSearchIndex{
 		BrowseNode: 133141011,
 		SortValues: []string{
 			SortEditionSalesVelocity,
@@ -773,7 +773,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Kitchen: &LocaleSearchIndex{
+	Kitchen: LocaleSearchIndex{
 		BrowseNode: 284507,
 		SortValues: []string{
 			SortPriceDesc,
@@ -799,7 +799,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	LawnAndGarden: &LocaleSearchIndex{
+	LawnAndGarden: LocaleSearchIndex{
 		BrowseNode: 3238155011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -825,7 +825,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Luggage: &LocaleSearchIndex{
+	Luggage: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			SortPriceDesc,
@@ -851,7 +851,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	MP3Downloads: &LocaleSearchIndex{
+	MP3Downloads: LocaleSearchIndex{
 		BrowseNode: 624868011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -874,7 +874,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Magazines: &LocaleSearchIndex{
+	Magazines: LocaleSearchIndex{
 		BrowseNode: 599872,
 		SortValues: []string{
 			SortPriceDesc,
@@ -902,7 +902,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Miscellaneous: &LocaleSearchIndex{
+	Miscellaneous: LocaleSearchIndex{
 		BrowseNode: 10304191,
 		SortValues: []string{
 			SortPriceDesc,
@@ -928,7 +928,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	MobileApps: &LocaleSearchIndex{
+	MobileApps: LocaleSearchIndex{
 		BrowseNode: 2350150011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -954,7 +954,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Music: &LocaleSearchIndex{
+	Music: LocaleSearchIndex{
 		BrowseNode: 301668,
 		SortValues: []string{
 			SortOriginalReleaseDateDesc,
@@ -985,7 +985,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	MusicTracks: &LocaleSearchIndex{
+	MusicTracks: LocaleSearchIndex{
 		BrowseNode: 301668,
 		SortValues: []string{
 			SortTitleRankDesc,
@@ -1004,7 +1004,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	MusicalInstruments: &LocaleSearchIndex{
+	MusicalInstruments: LocaleSearchIndex{
 		BrowseNode: 11965861,
 		SortValues: []string{
 			SortLaunch_DateDesc,
@@ -1030,7 +1030,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	OfficeProducts: &LocaleSearchIndex{
+	OfficeProducts: LocaleSearchIndex{
 		BrowseNode: 1084128,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1056,7 +1056,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	OutdoorLiving: &LocaleSearchIndex{
+	OutdoorLiving: LocaleSearchIndex{
 		BrowseNode: 2972638011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1082,7 +1082,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	PCHardware: &LocaleSearchIndex{
+	PCHardware: LocaleSearchIndex{
 		BrowseNode: 541966,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1107,7 +1107,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	PetSupplies: &LocaleSearchIndex{
+	PetSupplies: LocaleSearchIndex{
 		BrowseNode: 2619534011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1136,7 +1136,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Photo: &LocaleSearchIndex{
+	Photo: LocaleSearchIndex{
 		BrowseNode: 502394,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1162,7 +1162,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Shoes: &LocaleSearchIndex{
+	Shoes: LocaleSearchIndex{
 		BrowseNode: 672124011,
 		SortValues: []string{
 			SortLaunch_DateDesc,
@@ -1189,7 +1189,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Software: &LocaleSearchIndex{
+	Software: LocaleSearchIndex{
 		BrowseNode: 409488,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1214,7 +1214,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	SportingGoods: &LocaleSearchIndex{
+	SportingGoods: LocaleSearchIndex{
 		BrowseNode: 3375301,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1244,7 +1244,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Tools: &LocaleSearchIndex{
+	Tools: LocaleSearchIndex{
 		BrowseNode: 468240,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1270,7 +1270,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Toys: &LocaleSearchIndex{
+	Toys: LocaleSearchIndex{
 		BrowseNode: 165795011,
 		SortValues: []string{
 			SortAgeMin,
@@ -1293,7 +1293,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	UnboxVideo: &LocaleSearchIndex{
+	UnboxVideo: LocaleSearchIndex{
 		BrowseNode: 2858778011,
 		SortValues: []string{
 			SortLaunch_DateDesc,
@@ -1321,7 +1321,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	VHS: &LocaleSearchIndex{
+	VHS: LocaleSearchIndex{
 		BrowseNode: 2625374011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1349,7 +1349,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Video: &LocaleSearchIndex{
+	Video: LocaleSearchIndex{
 		BrowseNode: 404276,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1377,7 +1377,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	VideoGames: &LocaleSearchIndex{
+	VideoGames: LocaleSearchIndex{
 		BrowseNode: 11846801,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1402,7 +1402,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Watches: &LocaleSearchIndex{
+	Watches: LocaleSearchIndex{
 		BrowseNode: 378516011,
 		SortValues: []string{
 			SortPriceDesc,
@@ -1427,7 +1427,7 @@ var LocaleUS = struct {
 		},
 	},
 
-	Wireless: &LocaleSearchIndex{
+	Wireless: LocaleSearchIndex{
 		BrowseNode: 2335753011,
 		SortValues: []string{
 			SortTitleRankDesc,

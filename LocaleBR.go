@@ -11,14 +11,14 @@ var LocaleBRMap = map[string]LocaleSearchIndex{
 var LocaleBR = struct {
 	All, Books, KindleStore LocaleSearchIndex
 }{
-	All: &LocaleSearchIndex{
+	All: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{},
 		ItemSearchParameters: []string{
 			"Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinimumPrice",
 		},
 	},
-	Books: &LocaleSearchIndex{
+	Books: LocaleSearchIndex{
 		BrowseNode: 0,
 		SortValues: []string{
 			"-price", "daterank", "price", "relevancerank", "reviewrank_authority", "salesrank",
@@ -29,7 +29,8 @@ var LocaleBR = struct {
 			"MinPercentageOff", "MinimumPrice", "Power", "Publisher",
 			"Sort", "Title",
 		},
-	}, KindleStore: &LocaleSearchIndex{
+	},
+	KindleStore: LocaleSearchIndex{
 		BrowseNode: 5308308011,
 		SortValues: []string{
 			"-price", "daterank", "price", "relevancerank",

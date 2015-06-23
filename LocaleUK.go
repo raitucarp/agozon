@@ -17,208 +17,208 @@ var LocaleUK = struct {
 	PetSupplies, Shoes, Software, SoftwareVideoGames, SportingGoods, Tools, Toys,
 	UnboxVideo, VHS, Video, VideoGames, Watches LocaleSearchIndex
 }{
-	All: &LocaleSearchIndex{
+	All: LocaleSearchIndex{
 		BrowseNode:           0,
 		SortValues:           []string{},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MerchantId"},
 	},
-	MusicalInstruments: &LocaleSearchIndex{
+	MusicalInstruments: LocaleSearchIndex{
 		BrowseNode:           340837031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	MusicTracks: &LocaleSearchIndex{
+	MusicTracks: LocaleSearchIndex{
 		BrowseNode:           520920,
 		SortValues:           []string{"-titlerank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort"},
 	},
-	Outlet: &LocaleSearchIndex{
+	Outlet: LocaleSearchIndex{
 		BrowseNode:           245408031,
 		SortValues:           []string{},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MerchantId", "MinPercentageOff"},
 	},
-	UnboxVideo: &LocaleSearchIndex{
+	UnboxVideo: LocaleSearchIndex{
 		BrowseNode:           0,
 		SortValues:           []string{"date-desc-rank", "popularity-rank", "price-asc-rank", "price-desc-rank", "relevancerank", "review-rank"},
 		ItemSearchParameters: []string{"Actor", "AudienceRating", "Availability", "Director", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Publisher", "Sort", "Title"},
 	},
-	VHS: &LocaleSearchIndex{
+	VHS: LocaleSearchIndex{
 		BrowseNode:           125556011,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "inverse-pricerank", "price", "releasedate", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Actor", "Availability", "Director", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Publisher", "Sort", "Title"},
 	},
-	Kitchen: &LocaleSearchIndex{
+	Kitchen: LocaleSearchIndex{
 		BrowseNode:           11052591,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Lighting: &LocaleSearchIndex{
+	Lighting: LocaleSearchIndex{
 		BrowseNode:           213078031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	PCHardware: &LocaleSearchIndex{
+	PCHardware: LocaleSearchIndex{
 		BrowseNode:           340832031,
 		SortValues:           []string{"-price", "launch_date", "price", "psrank", "reviewrank", "reviewrank_authority", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	SoftwareVideoGames: &LocaleSearchIndex{
+	SoftwareVideoGames: LocaleSearchIndex{
 		BrowseNode:           1025616,
 		SortValues:           []string{"-titlerank", "daterank", "inverse-pricerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Music: &LocaleSearchIndex{
+	Music: LocaleSearchIndex{
 		BrowseNode:           520920,
 		SortValues:           []string{"-price", "-releasedate", "-titlerank", "inverse-pricerank", "price", "releasedate", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Artist", "Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	SportingGoods: &LocaleSearchIndex{
+	SportingGoods: LocaleSearchIndex{
 		BrowseNode:           319530011,
 		SortValues:           []string{"-price", "-titlerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MerchantId", "MinPercentageOff", "Sort", "Title"},
 	},
 
-	Baby: &LocaleSearchIndex{
+	Baby: LocaleSearchIndex{
 		BrowseNode:           60032031,
 		SortValues:           []string{"-price", "price", "relevancerank", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Classical: &LocaleSearchIndex{
+	Classical: LocaleSearchIndex{
 		BrowseNode:           505510,
 		SortValues:           []string{"-price", "-titlerank", "inverse-pricerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Artist", "Availability", "Composer", "Conductor", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Orchestra", "Sort", "Title"},
 	},
-	Electronics: &LocaleSearchIndex{
+	Electronics: LocaleSearchIndex{
 		BrowseNode:           560800,
 		SortValues:           []string{"-titlerank", "daterank", "inverse-pricerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	HomeGarden: &LocaleSearchIndex{
+	HomeGarden: LocaleSearchIndex{
 		BrowseNode:           11052591,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	HomeImprovement: &LocaleSearchIndex{
+	HomeImprovement: LocaleSearchIndex{
 		BrowseNode:           79904031,
 		SortValues:           []string{"-price", "price", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	VideoGames: &LocaleSearchIndex{
+	VideoGames: LocaleSearchIndex{
 		BrowseNode:           1025616,
 		SortValues:           []string{"-titlerank", "daterank", "inverse-pricerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	OfficeProducts: &LocaleSearchIndex{
+	OfficeProducts: LocaleSearchIndex{
 		BrowseNode:           560800,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Apparel: &LocaleSearchIndex{
+	Apparel: LocaleSearchIndex{
 		BrowseNode:           83451031,
 		SortValues:           []string{"-launch-date", "-price", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Blended: &LocaleSearchIndex{
+	Blended: LocaleSearchIndex{
 		BrowseNode:           0,
 		SortValues:           []string{},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords"},
 	},
-	Grocery: &LocaleSearchIndex{
+	Grocery: LocaleSearchIndex{
 		BrowseNode:           344155031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	KindleStore: &LocaleSearchIndex{
+	KindleStore: LocaleSearchIndex{
 		BrowseNode:           341677031,
 		SortValues:           []string{"-edition-sales-velocity", "-price", "daterank", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Publisher", "Sort", "Title"},
 	},
-	MP3Downloads: &LocaleSearchIndex{
+	MP3Downloads: LocaleSearchIndex{
 		BrowseNode:           77925031,
 		SortValues:           []string{"-price", "-releasedate", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	MobileApps: &LocaleSearchIndex{
+	MobileApps: LocaleSearchIndex{
 		BrowseNode:           1661658031,
 		SortValues:           []string{"-price", "pmrank", "price", "relevancerank", "reviewrank", "reviewrank_authority"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Luggage: &LocaleSearchIndex{
+	Luggage: LocaleSearchIndex{
 		BrowseNode:           2454167031,
 		SortValues:           []string{"-price", "date-desc-rank", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Shoes: &LocaleSearchIndex{
+	Shoes: LocaleSearchIndex{
 		BrowseNode:           362350011,
 		SortValues:           []string{"-launch-date", "-price", "pmrank", "price", "reviewrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Appliances: &LocaleSearchIndex{
+	Appliances: LocaleSearchIndex{
 		BrowseNode:           908799031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Beauty: &LocaleSearchIndex{
+	Beauty: LocaleSearchIndex{
 		BrowseNode:           66280031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Books: &LocaleSearchIndex{
+	Books: LocaleSearchIndex{
 		BrowseNode:           1025612,
 		SortValues:           []string{"-price", "-publication_date", "-titlerank", "-unit-sales", "daterank", "inverse-pricerank", "price", "pricerank", "pubdate", "publication_date", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Power", "Publisher", "Sort", "Title"},
 	},
-	DVD: &LocaleSearchIndex{
+	DVD: LocaleSearchIndex{
 		BrowseNode:           573406,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "inverse-pricerank", "price", "releasedate", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Actor", "AudienceRating", "Availability", "Director", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Publisher", "Sort", "Title"},
 	},
-	HealthPersonalCare: &LocaleSearchIndex{
+	HealthPersonalCare: LocaleSearchIndex{
 		BrowseNode:           66280031,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "price", "releasedate", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Jewelry: &LocaleSearchIndex{
+	Jewelry: LocaleSearchIndex{
 		BrowseNode:           193717031,
 		SortValues:           []string{"-launch-date", "-price", "price", "relevancerank", "reviewrank", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MerchantId", "MinPercentageOff", "Sort", "Title"},
 	},
-	Tools: &LocaleSearchIndex{
+	Tools: LocaleSearchIndex{
 		BrowseNode:           11052591,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Actor", "Artist", "AudienceRating", "Author", "Availability", "Brand", "Composer", "Conductor", "Director", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Neighborhood", "Orchestra", "Power", "Publisher", "ReleaseDate", "Sort", "Title"},
 	},
-	Video: &LocaleSearchIndex{
+	Video: LocaleSearchIndex{
 		BrowseNode:           283926,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "inverse-pricerank", "price", "releasedate", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Actor", "AudienceRating", "Availability", "Director", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Publisher", "Sort", "Title"},
 	},
-	Watches: &LocaleSearchIndex{
+	Watches: LocaleSearchIndex{
 		BrowseNode:           328229011,
 		SortValues:           []string{"-launch-date", "-price", "-titlerank", "price", "relevancerank", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MerchantId", "MinPercentageOff", "Sort", "Title"},
 	},
-	Automotive: &LocaleSearchIndex{
+	Automotive: LocaleSearchIndex{
 		BrowseNode:           248878031,
 		SortValues:           []string{"-price", "price", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	OutdoorLiving: &LocaleSearchIndex{
+	OutdoorLiving: LocaleSearchIndex{
 		BrowseNode:           11052591,
 		SortValues:           []string{"-price", "-titlerank", "daterank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Software: &LocaleSearchIndex{
+	Software: LocaleSearchIndex{
 		BrowseNode:           1025614,
 		SortValues:           []string{"-titlerank", "daterank", "inverse-pricerank", "price", "reviewrank", "salesrank", "titlerank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	PetSupplies: &LocaleSearchIndex{
+	PetSupplies: LocaleSearchIndex{
 		BrowseNode:           340841031,
 		SortValues:           []string{"-price", "-price-new-bin", "price", "price-new-bin", "relevancerank", "reviewrank", "reviewrank_authority", "salesrank"},
 		ItemSearchParameters: []string{"Author", "Availability", "Brand", "ItemPage", "Keywords", "Manufacturer", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"},
 	},
-	Toys: &LocaleSearchIndex{
+	Toys: LocaleSearchIndex{
 		BrowseNode:           712832,
 		SortValues:           []string{"-mfg-age-min", "-price", "mfg-age-min", "price", "salesrank"},
 		ItemSearchParameters: []string{"Availability", "ItemPage", "Keywords", "MaximumPrice", "MerchantId", "MinPercentageOff", "MinimumPrice", "Sort", "Title"}}}
