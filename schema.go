@@ -75,6 +75,18 @@ var ValidResponseGroup = map[string][]string{
 		ResponseGroupRelatedItems, ResponseGroupSearchBins, ResponseGroupSimilarities,
 		ResponseGroupSmall, ResponseGroupTracks, ResponseGroupVariations, ResponseGroupVariationSummary,
 	},
+	"ItemLookup": []string{
+		ResponseGroupAccessories,
+		ResponseGroupBrowseNodes,
+		ResponseGroupEditorialReview,
+		ResponseGroupImages,
+		ResponseGroupItemAttributes,
+		ResponseGroupItemIds, ResponseGroupLarge, ResponseGroupMedium,
+		ResponseGroupOfferFull, ResponseGroupOffers, ResponseGroupPromotionSummary,
+		ResponseGroupOfferSummary, ResponseGroupRelatedItems,
+		ResponseGroupReviews, ResponseGroupSalesRank, ResponseGroupSimilarities, ResponseGroupSmall,
+		ResponseGroupTracks, ResponseGroupVariationImages, ResponseGroupVariations, ResponseGroupVariationSummary,
+	},
 	/*"Accessories", "AlternateVersions", "BrowseNodeInfo", "BrowseNodes", "Cart", "CartNewReleases",
 	"CartTopSellers", "CartSimilarities", "EditorialReview", "Images", "ItemAttributes", "ItemIds",
 	"Large", "Medium", "MostGifted", "MostWishedFor", "NewReleases", "OfferFull",
@@ -205,20 +217,6 @@ type CartModifyRequest struct {
 type MetaData struct {
 	Key   string
 	Value string
-}
-
-type ItemLookupRequest struct {
-	Condition             string `xml:",omitempty" json:",omitempty"`
-	IdType                string `xml:",omitempty" json:",omitempty"`
-	IncludeReviewsSummary string
-	ItemId                []string
-	MerchantId            string
-	RelatedItemPage       string
-	RelationshipType      []string
-	ResponseGroup         string
-	SearchIndex           string
-	TruncateReviewsAt     string
-	VariationPage         string
 }
 
 type SimilarityLookupRequest struct {

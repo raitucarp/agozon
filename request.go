@@ -2,12 +2,14 @@ package agozon
 
 import (
 	"encoding/xml"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
 	"time"
+	//"github.com/parnurzeal/gorequest"
+	//"crypto/tls"
+	"fmt"
 )
 
 // Default User agent.
@@ -16,7 +18,14 @@ var UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
 
 // Get response, from url
 func HTTPGet(theURL string) (response []byte, err error) {
-	client := &http.Client{}
+	/*tr := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}*/
+
+
+	client := &http.Client{/*Transport:tr*/}
+
+	fmt.Println(theURL)
 
 	req, err := http.NewRequest("GET", theURL, nil)
 	req.Close = true
@@ -35,6 +44,12 @@ func HTTPGet(theURL string) (response []byte, err error) {
 		return
 	}
 	return
+	/*request := gorequest.New()
+	_, body, errs := request.Get(theURL).Set("User-Agent", UserAgent).End()
+	if len(errs) > 0 {
+		return []byte(""), errs[0]
+	}
+	return []byte(body), */
 }
 
 // type Request from default XML Schema
@@ -54,19 +69,24 @@ type Request struct {
 	URL                     url.URL
 
 	// Unexported fields, for internal use only
+	associateTag, awsAccessKeyId,secretKey string
 	response  string
 	locale    string
-	secretKey string
+}
+
+func (r *Request) setConfig(AssociateTag string, AWSAccessKeyId string, SecretAccessKey string) {
+	r.associateTag = AssociateTag
+	r.awsAccessKeyId = AWSAccessKeyId
+	r.secretKey = SecretAccessKey
 }
 
 // Create new Request, with default params
-func (r *Request) create(AssociateTag string, AWSAccessKeyId string, SecretAccessKey string) {
-	r.secretKey = SecretAccessKey
+func (r *Request) create() {
 	// build default query
 	q := url.Values{
 		"Service":        []string{ServiceName},
-		"AWSAccessKeyId": []string{AWSAccessKeyId},
-		"AssociateTag":   []string{AssociateTag},
+		"AWSAccessKeyId": []string{r.awsAccessKeyId},
+		"AssociateTag":   []string{r.associateTag},
 		"Version":        []string{Version},
 	}.Encode()
 
@@ -116,7 +136,7 @@ func (r *Request) AddParams(queries map[string]string) {
 // Set Response Group
 func (r *Request) SetResponseGroup(responseGroup ...string) {
 	q := r.URL.Query()
-	q.Set("ResponseGroup", strings.Join(responseGroup, ","))
+	q.Add("ResponseGroup", strings.Join(responseGroup, ","))
 	r.URL.RawQuery = q.Encode()
 }
 
@@ -130,10 +150,9 @@ func (r *Request) CallOperation(operationName string) (err error) {
 	// get request
 	theURL := signedURL.String()
 
-	fmt.Println(theURL)
-
 	// Get response via REST http get call
 	response, err := HTTPGet(theURL)
+
 	// if error not null return error
 	if err != nil {
 		return

@@ -31,7 +31,7 @@ type ItemSearchRequest struct {
 	Power                 url.Values `xml:",omitempty" json:",omitempty"`
 	Publisher             string     `xml:",omitempty" json:",omitempty"`
 	RelatedItemPage       string     `xml:",omitempty" json:",omitempty"`
-	RelationshipType      []string   `xml:",omitempty" json:",omitempty"`
+	RelationshipType      string   `xml:",omitempty" json:",omitempty"`
 	responseGroup         []string   `xml:"ResponseGroup,omitempty" json:",omitempty"`
 	SearchIndex           string     `xml:",omitempty" json:",omitempty"`
 	Sort                  string     `xml:",omitempty" json:",omitempty"`
@@ -39,7 +39,7 @@ type ItemSearchRequest struct {
 	ReleaseDate           string     `xml:",omitempty" json:",omitempty"`
 	TruncateReviewsAt     uint64     `xml:",omitempty" json:",omitempty"`
 	IncludeReviewsSummary bool       `xml:",omitempty" json:",omitempty"`
-	VariationPage         uint64
+	VariationPage         string
 	locale                string
 	do                    func() (ItemSearchResponse, error)
 	validate              func() map[string]string
@@ -114,7 +114,8 @@ func (response *ItemSearchResponse) GetItems() []Item {
 }
 
 /* ItemSearch operation */
-func (r *Request) ItemSearch() *ItemSearchRequest {
+func (r *Request) ItemSearch(keywords ...string) *ItemSearchRequest {
+	r.create()
 	// set params
 	req := ItemSearchRequest{}
 	req.locale = r.locale
@@ -249,7 +250,11 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		// When, for example, the search index equals "MusicTracks",
 		// the Keywords parameter enables you to search by song title.
 		// If you enter a phrase, the spaces must be URL-encoded as %20.
-		m["Keywords"] = req.keywords
+		if req.keywords == "" {
+			m["Keywords"] = strings.Join(keywords, " ")
+		} else {
+			m["Keywords"] = req.keywords
+		}
 
 		// Name of a manufacturer associated with the item. You can enter all or part of the name.
 		m["Manufacturer"] = req.Manufacturer
@@ -301,14 +306,27 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		// Each ItemLookup request can return, at most, ten related items.
 		// The RelatedItemPage value specifies the set of ten related items to return.
 		// A value of 2, for example, returns the second set of ten related items.
-		m["RelatedItemPage"] = req.RelatedItemPage
+		for _, rg := range req.responseGroup {
+			if rg == "RelatedItems" {
+				m["RelatedItemPage"] = req.RelatedItemPage
+				m["RelationshipType"] = req.RelationshipType
+			}
+		}
 
-		/*
-			RelatedItemPage
-			RelationshipType*/
-		m["SearchIndex"] = req.SearchIndex
+		m["SearchIndex"] = "All"
+		m["Sort"] = ""
+		if val, ok := LocaleInformation[req.locale]; ok {
+			if searchIndex, ok := val[req.SearchIndex]; ok {
+				m["SearchIndex"] = req.SearchIndex
+				for _, v := range searchIndex.SortValues {
+					if req.Sort == v {
+						m["Sort"] = req.Sort
+					}
+				}
+			}
+		}
 
-		m["Sort"] = req.Sort
+
 
 		// The title associated with the item. You can enter all or part of the title.
 		// Title searches are a subset of Keyword searches.
@@ -318,7 +336,11 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		// By default, reviews are truncated to 1000 characters within the Reviews iframe.
 		// To specify a different length, enter the value.
 		// To return complete reviews, specify 0.
-		m["TruncateReviewsAt"] = req.TruncateReviewsAt
+		if req.TruncateReviewsAt == 0 {
+			m["TruncateReviewsAt"] = ""
+		} else {
+			m["TruncateReviewsAt"] = strconv.FormatUint(req.TruncateReviewsAt, 10)
+		}
 
 		// Retrieves a specific page of variations returned by ItemSearch.
 		// By default, ItemSearch returns all variations.
@@ -326,15 +348,35 @@ func (r *Request) ItemSearch() *ItemSearchRequest {
 		// There are 10 variations per page.
 		// To examine offers 11 trough 20, for example, set VariationPage to 2.
 		// The total number of pages is returned in the TotalPages element.
-		if req.VariationPage == 0 {
-			m["VariationPage"] = ""
-		} else {
-			m["VariationPage"] = strconv.FormatUint(req.VariationPage, 10)
+		m["VariationPage"] = req.VariationPage
+
+		// validate all params by search index to be more safety use
+		validParams := map[string]string{}
+		if locale, ok := LocaleInformation[req.locale]; ok {
+			searchIndex := locale[m["SearchIndex"]]
+			for key, val := range m {
+				for _, valParams := range searchIndex.ItemSearchParameters {
+					if key == valParams {
+						validParams[key] = val
+					}
+				}
+			}
+			validParams["SearchIndex"] = m["SearchIndex"]
 		}
 
-		r.SetResponseGroup(req.responseGroup...)
+		// Specifies the types of values to return.
+		// You can specify multiple response groups in one request by separating them with commas.
+		responseGroup := []string{}
+		for _, val := range req.responseGroup {
+			for _, validRG := range ValidResponseGroup["ItemSearch"] {
+				if val == validRG {
+					responseGroup = append(responseGroup, val)
+				}
+			}
+		}
+		r.SetResponseGroup(responseGroup...)
 
-		return m
+		return validParams
 	}
 
 	// do the request

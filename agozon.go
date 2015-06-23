@@ -61,7 +61,7 @@ func NewRequest(c *Config) (r Request) {
 
 	// Set initial setup
 	r.SetLocale(Locale)
-	r.create(AssociateTag, AWSAccessKeyId, SecretAccessKey)
+	r.setConfig(AssociateTag, AWSAccessKeyId, SecretAccessKey)
 
 	return
 }

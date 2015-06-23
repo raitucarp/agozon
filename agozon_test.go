@@ -5,43 +5,49 @@ import (
 	"testing"
 )
 
-func TestItemSearchRequest(t *testing.T) {
-	testRequest := NewRequest(&Config{
-		AssociateTag:    "hoxr0a-20",
-		AWSAccessKeyId:  "AKIAJHWAQ26RR23FAORQ",
-		SecretAccessKey: "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",
-	})
+var testRequest = NewRequest(&Config{
+	AssociateTag:    "hoxr0a-20",
+	AWSAccessKeyId:  "AKIAJHWAQ26RR23FAORQ",
+	SecretAccessKey: "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",
+})
 
-	searchMelon := testRequest.ItemSearch()
-	searchMelon.Keywords("Calculus")
-	searchMelon.SearchIndex = "Books"
-	searchMelon.ResponseGroup("Large", "ItemAttributes")
-	response, err := searchMelon.Do()
+func TestItemSearchRequest(t *testing.T) {
+	searchModernBooks := testRequest.ItemSearch()
+	//searchMelon.Keywords("calculus")
+	searchModernBooks.SearchIndex = "Books"
+	searchModernBooks.Keywords("modern")
+	searchModernBooks.Sort = "price"
+	searchModernBooks.OnlyAvailable(true)
+	searchModernBooks.ResponseGroup("Large", "ItemAttributes", "OfferFull")
+	response, err := searchModernBooks.Do()
 	if err != nil {
 		t.Error("It's an error", err)
 		return
 	}
-	fmt.Println(response)
 
 	/*for _, error := range response.OperationRequest.Errors {}*/
 	fmt.Println("length of error", response.Items.Request.Errors)
 
 	items := response.GetItems()
 	for _, item := range items {
-		ImageSets := item.ImageSets
-		for _, imageset := range ImageSets {
-
-			fmt.Println(imageset.LargeImage.URL)
-		}
+		fmt.Println(item.ASIN, item.ItemAttributes.Title)
 	}
-	/*testRequest.ResponseGroup([]string{
-		"Images",
-		"ItemAttributes",
-		"Offers",
-		"Reviews",
-	})
-	testRequest.ItemLookup(map[string]string{
-		"ItemId": "0679722769",
-	})*/
+}
 
+
+func TestItemLookupRequest(t *testing.T) {
+	lookupItem := testRequest.ItemLookup("B00IJYII4E", "B00IEG7ULO")
+	lookupItem.ResponseGroup("Large")
+	response, err := lookupItem.Do()
+	if err != nil {
+		t.Error("It's an error", err)
+		return
+	}
+	/*for _, error := range response.OperationRequest.Errors {}*/
+	fmt.Println("length of error", response.Items.Request.Errors)
+
+	items := response.GetItems()
+	for _, item := range items {
+		fmt.Println(item.ASIN, item.ItemAttributes.Title)
+	}
 }
