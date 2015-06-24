@@ -68,6 +68,13 @@ func TestCartCreate(t *testing.T) {
 		t.Error("It's an error", err)
 		return
 	}
+	fmt.Println("print carts")
+	for _, cartInfo := range response.Cart{
+		fmt.Println("--------------------")
+		fmt.Println("CartID", cartInfo.CartID)
+		fmt.Println("PurchaseURL", cartInfo.PurchaseURL)
+		fmt.Println("HMAC", cartInfo.HMAC)
+		fmt.Println("MobileCartURL", cartInfo.MobileCartURL)
+	}
 
-	fmt.Println(response)
 }
