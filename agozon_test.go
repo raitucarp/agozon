@@ -34,7 +34,6 @@ func TestItemSearchRequest(t *testing.T) {
 	}
 }
 
-
 func TestItemLookupRequest(t *testing.T) {
 	lookupItem := testRequest.ItemLookup("B00IJYII4E", "B00IEG7ULO")
 	lookupItem.ResponseGroup("Large")
@@ -50,4 +49,25 @@ func TestItemLookupRequest(t *testing.T) {
 	for _, item := range items {
 		fmt.Println(item.ASIN, item.ItemAttributes.Title)
 	}
+}
+
+func TestCartCreate(t *testing.T) {
+	cart := testRequest.Cart()
+	response, err := cart.Create(
+		Item{
+			ASIN:     "B00IJYII4E",
+			Quantity: 1,
+		},
+		Item{
+			ASIN: "B00IEG7ULO",
+			Quantity: 2,
+		},
+	)
+
+	if err != nil {
+		t.Error("It's an error", err)
+		return
+	}
+
+	fmt.Println(response)
 }

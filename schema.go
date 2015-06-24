@@ -87,6 +87,10 @@ var ValidResponseGroup = map[string][]string{
 		ResponseGroupReviews, ResponseGroupSalesRank, ResponseGroupSimilarities, ResponseGroupSmall,
 		ResponseGroupTracks, ResponseGroupVariationImages, ResponseGroupVariations, ResponseGroupVariationSummary,
 	},
+	"CartCreate": []string{
+		ResponseGroupCart, ResponseGroupCartSimilarities,
+		ResponseGroupCartTopSellers, ResponseGroupCartNewReleases,
+	},
 	/*"Accessories", "AlternateVersions", "BrowseNodeInfo", "BrowseNodes", "Cart", "CartNewReleases",
 	"CartTopSellers", "CartSimilarities", "EditorialReview", "Images", "ItemAttributes", "ItemIds",
 	"Large", "Medium", "MostGifted", "MostWishedFor", "NewReleases", "OfferFull",
@@ -198,11 +202,6 @@ type CartAddRequest struct {
 
 type CartClearRequest struct {
 	*CartCommon
-}
-
-type CartCreateRequest struct {
-	*CartCommon
-	Items CartItems
 }
 
 type CartGetRequest struct {
@@ -398,6 +397,18 @@ type SimilarProduct struct {
 	Title string `xml:",omitempty" json:",omitempty"`
 }
 type SimilarProducts []SimilarProduct
+type SimilarViewedProducts []SimilarProduct
+
+type SavedForLaterItems struct {
+	SubTotal          *Price     `xml:",omitempty" json:",omitempty"`
+	SavedForLaterItem *CartItems `xml:",omitempty" json:",omitempty"`
+}
+
+type OtherCategoriesSimilarProduct struct {
+	ASIN  string `xml:",omitempty" json:",omitempty"`
+	Title string `xml:",omitempty" json:",omitempty"`
+}
+type OtherCategoriesSimilarProducts []OtherCategoriesSimilarProduct
 
 type Merchant struct {
 	Name string `xml:",omitempty" json:",omitempty"`
@@ -601,6 +612,8 @@ type ItemAttributes struct {
 
 type Item struct {
 	ASIN                string              `xml:",omitempty" json:",omitempty"`
+	Quantity            int                 `xml:",omitempty" json:",omitempty"`
+	OfferListingId      string              `xml:",omitempty" json:",omitempty"`
 	ParentASIN          string              `xml:",omitempty" json:",omitempty"`
 	Errors              *Errors             `xml:",omitempty" json:",omitempty"`
 	DetailPageURL       string              `xml:",omitempty" json:",omitempty"`

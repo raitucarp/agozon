@@ -1,22 +1,23 @@
 package agozon
+
 import (
+	"fmt"
 	"strconv"
 	"strings"
-	"fmt"
 )
 
 type ItemLookupRequest struct {
-	Condition             string `xml:",omitempty" json:",omitempty"`
-	IdType                string `xml:",omitempty" json:",omitempty"`
-	IncludeReviewsSummary bool `xml:",omitempty" json:",omitempty"`
+	Condition             string   `xml:",omitempty" json:",omitempty"`
+	IdType                string   `xml:",omitempty" json:",omitempty"`
+	IncludeReviewsSummary bool     `xml:",omitempty" json:",omitempty"`
 	ItemId                []string `xml:",omitempty" json:",omitempty"`
-	MerchantId            string `xml:",omitempty" json:",omitempty"`
-	RelatedItemPage       string `xml:",omitempty" json:",omitempty"`
-	RelationshipType      string `xml:",omitempty" json:",omitempty"`
+	MerchantId            string   `xml:",omitempty" json:",omitempty"`
+	RelatedItemPage       string   `xml:",omitempty" json:",omitempty"`
+	RelationshipType      string   `xml:",omitempty" json:",omitempty"`
 	responseGroup         []string `xml:",omitempty" json:",omitempty"`
-	SearchIndex           string `xml:",omitempty" json:",omitempty"`
-	TruncateReviewsAt     uint64 `xml:",omitempty" json:",omitempty"`
-	VariationPage         string `xml:",omitempty" json:",omitempty"`
+	SearchIndex           string   `xml:",omitempty" json:",omitempty"`
+	TruncateReviewsAt     uint64   `xml:",omitempty" json:",omitempty"`
+	VariationPage         string   `xml:",omitempty" json:",omitempty"`
 	locale                string
 	do                    func() (ItemLookupResponse, error)
 	validate              func() map[string]string
@@ -45,7 +46,7 @@ func (r *ItemLookupResponse) GetItems() []Item {
 	return r.Items.Item
 }
 
-func (r *ItemLookupRequest) Do()  (results ItemLookupResponse, err error) {
+func (r *ItemLookupRequest) Do() (results ItemLookupResponse, err error) {
 	results, err = r.do()
 	return
 }
@@ -56,7 +57,7 @@ func (r *Request) ItemLookup(itemids ...string) *ItemLookupRequest {
 	req := ItemLookupRequest{}
 	req.locale = r.locale
 
-	req.validate = func() map[string]string{
+	req.validate = func() map[string]string {
 		m := map[string]string{}
 
 		m["Condition"] = req.Condition

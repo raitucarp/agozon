@@ -31,7 +31,7 @@ type ItemSearchRequest struct {
 	Power                 url.Values `xml:",omitempty" json:",omitempty"`
 	Publisher             string     `xml:",omitempty" json:",omitempty"`
 	RelatedItemPage       string     `xml:",omitempty" json:",omitempty"`
-	RelationshipType      string   `xml:",omitempty" json:",omitempty"`
+	RelationshipType      string     `xml:",omitempty" json:",omitempty"`
 	responseGroup         []string   `xml:"ResponseGroup,omitempty" json:",omitempty"`
 	SearchIndex           string     `xml:",omitempty" json:",omitempty"`
 	Sort                  string     `xml:",omitempty" json:",omitempty"`
@@ -325,8 +325,6 @@ func (r *Request) ItemSearch(keywords ...string) *ItemSearchRequest {
 				}
 			}
 		}
-
-
 
 		// The title associated with the item. You can enter all or part of the title.
 		// Title searches are a subset of Keyword searches.

@@ -22,8 +22,7 @@ func HTTPGet(theURL string) (response []byte, err error) {
 		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 	}*/
 
-
-	client := &http.Client{/*Transport:tr*/}
+	client := &http.Client{ /*Transport:tr*/ }
 
 	fmt.Println(theURL)
 
@@ -69,9 +68,9 @@ type Request struct {
 	URL                     url.URL
 
 	// Unexported fields, for internal use only
-	associateTag, awsAccessKeyId,secretKey string
-	response  string
-	locale    string
+	associateTag, awsAccessKeyId, secretKey string
+	response                                string
+	locale                                  string
 }
 
 func (r *Request) setConfig(AssociateTag string, AWSAccessKeyId string, SecretAccessKey string) {
