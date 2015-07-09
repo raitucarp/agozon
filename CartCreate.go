@@ -11,7 +11,7 @@ type CartCreateRequest struct {
 
 type CartCreateResponse struct {
 	OperationRequest OperationRequest `xml:"OperationRequest,omitempty" json:",omitempty"`
-	Cart             []Cart           `xml:",omitempty" json:",omitempty"`
+	Cart             Cart             `xml:",omitempty" json:",omitempty"`
 }
 
 /* CartCreate */
@@ -22,38 +22,32 @@ type CartCreateResponse struct {
 // In Product Advertising API, the shopping cart is considered remote because it is hosted by Amazon servers.
 // In this way, the cart is remote to the vendor's web site where the customer views and selects the
 // items they want to purchase.
-func (c *Cart) Create(items ...Item) (response CartCreateResponse, err error) {
+func (c *remoteCart) Create(items ...Item) (response CartCreateResponse, err error) {
 	q := map[string]string{}
+
 	for index, item := range items {
-		key := "Item." + strconv.Itoa(index)
+		key := "Item." + strconv.Itoa(index+1)
 		if item.OfferListingId != "" {
 			q[key+".OfferListingId"] = item.OfferListingId
-		} else {
-			q[key+".ASIN"] = item.ASIN
+			// add quantity
+			if item.Quantity < 1 {
+				item.Quantity = 1
+			}
+			q[key+".Quantity"] = strconv.Itoa(item.Quantity)
 		}
-		// add quantity
-		if item.Quantity < 1 {
-			item.Quantity = 1
-		}
-		q[key+".Quantity"] = strconv.Itoa(item.Quantity)
 	}
 
 	// call cart do
-	get, err := c.do("CartCreate", q)
-    if err != nil {
-        return
-    }
-    err = get(&response)
-    // catch the error
-    if err != nil {
-        return
-    }
+	response, err = c.do("CartCreate", q)
+	if err != nil {
+		return
+	}
 
-    // detect error from resposne
-    if response.OperationRequest.Errors != nil {
-        return response, response.OperationRequest.Errors
-    }
+	// detect error from response
+	if response.Cart.Request.Errors != nil {
+		return response, response.Cart.Request.Errors
+	}
 
-    // return response and error
-    return
+	// return response and error
+	return
 }

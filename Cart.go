@@ -1,58 +1,63 @@
 package agozon
 
-func (r *Request) Cart() *Cart {
-	c := &Cart{}
+type remoteCart struct {
+	request       *Request
+	responseGroup []string `xml:",omitempty" json:",omitempty"`
+}
 
-	// define do
-	c.do = func(operationName string, q map[string]string) (get func(response interface{}) (err error), err error) {
-		r.create()
-		// add queries to api request
-		r.AddParams(q)
-		err = r.CallOperation(operationName)
-		if err != nil {
-			return
-		}
-
-		// returning response
-		get = r.Get
-		return get, nil
+func (c *remoteCart) do(operationName string, q map[string]string) (response interface{}, err error) {
+	c.request.create()
+	c.validate(operationName)
+	// add queries to api request
+	c.request.AddParams(q)
+	err = c.request.CallOperation(operationName)
+	if err != nil {
+		return
 	}
 
+	// returning response
+	err = c.request.Get(&response)
+	if err != nil {
+		return
+	}
+
+	return
+}
+
+func (c *remoteCart) validate(operationName string)  {
+	responseGroup := []string{}
+	for _, val := range c.responseGroup {
+		for _, validRG := range ValidResponseGroup[operationName] {
+			if val == validRG {
+				responseGroup = append(responseGroup, val)
+			}
+		}
+	}
+	c.request.SetResponseGroup(responseGroup...)
+}
+
+func (c *remoteCart) ResponseGroup(responseGroup ...string) {
+	c.responseGroup = responseGroup
+}
+
+func (r *Request) NewRemoteCart() *remoteCart {
+	c := &remoteCart{request: &r}
 	return c
 }
 
 type Cart struct {
 	Request                        *Request                        `xml:",omitempty" json:",omitempty"`
-	CartID                         string                          `xml:",omitempty" json:",omitempty"`
-	CartItems                      *CartItems                      `xml:",omitempty" json:",omitempty"`
+	CartId                         string                          `xml:",omitempty" json:",omitempty"`
 	HMAC                           string                          `xml:",omitempty" json:",omitempty"`
-	MobileCartURL                  string                          `xml:",omitempty" json:",omitempty"`
-	NewReleases                    *NewReleases                    `xml:",omitempty" json:",omitempty"`
-	OtherCategoriesSimilarProducts *OtherCategoriesSimilarProducts `xml:",omitempty" json:",omitempty"`
+	URLEncodedHMAC                 string                          `xml:",omitempty" json:",omitempty"`
 	PurchaseURL                    string                          `xml:",omitempty" json:",omitempty"`
+	MobileCartURL                  string                          `xml:",omitempty" json:",omitempty"`
+	SubTotal                       *Price                          `xml:",omitempty" json:",omitempty"`
+	CartItems                      *CartItems                      `xml:",omitempty" json:",omitempty"`
 	SavedForLaterItems             *SavedForLaterItems             `xml:",omitempty" json:",omitempty"`
 	SimilarProducts                *SimilarProducts                `xml:"SimilarProducts>SimilarProduct,omitempty" json:",omitempty"`
-	SimilarViewedProducts          *SimilarViewedProducts          `xml:"SimilarViewedProducts>SimilarViewedProduct,omitempty" json:",omitempty"`
-	SubTotal                       *Price                          `xml:",omitempty" json:",omitempty"`
 	TopSellers                     *TopSellers                     `xml:"TopSellers>TopSeller,omitempty" json:",omitempty"`
-	URLEncodedHMAC                 string                          `xml:",omitempty" json:",omitempty"`
-
-	// function
-	do func(string, map[string]string) (func(response interface{}) (err error), error)
-}
-
-func (c *Cart) Add() {
-
-}
-
-func (c *Cart) Get() {
-
-}
-
-func (c *Cart) Modify() {
-
-}
-
-func (c *Cart) Clear() {
-
+	NewReleases                    *NewReleases                    `xml:",omitempty" json:",omitempty"`
+	SimilarViewedProducts          *SimilarViewedProducts          `xml:"SimilarViewedProducts>SimilarViewedProduct,omitempty" json:",omitempty"`
+	OtherCategoriesSimilarProducts *OtherCategoriesSimilarProducts `xml:",omitempty" json:",omitempty"`
 }
