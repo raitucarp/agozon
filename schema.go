@@ -76,14 +76,10 @@ var ValidResponseGroup = map[string][]string{
 		ResponseGroupSmall, ResponseGroupTracks, ResponseGroupVariations, ResponseGroupVariationSummary,
 	},
 	"ItemLookup": []string{
-		ResponseGroupAccessories,
-		ResponseGroupBrowseNodes,
-		ResponseGroupEditorialReview,
-		ResponseGroupImages,
-		ResponseGroupItemAttributes,
-		ResponseGroupItemIds, ResponseGroupLarge, ResponseGroupMedium,
-		ResponseGroupOfferFull, ResponseGroupOffers, ResponseGroupPromotionSummary,
-		ResponseGroupOfferSummary, ResponseGroupRelatedItems,
+		ResponseGroupAccessories, ResponseGroupBrowseNodes,ResponseGroupEditorialReview,
+		ResponseGroupImages, ResponseGroupItemAttributes,ResponseGroupItemIds,
+		ResponseGroupLarge, ResponseGroupMedium, ResponseGroupOfferFull, ResponseGroupOffers,
+		ResponseGroupPromotionSummary, ResponseGroupOfferSummary, ResponseGroupRelatedItems,
 		ResponseGroupReviews, ResponseGroupSalesRank, ResponseGroupSimilarities, ResponseGroupSmall,
 		ResponseGroupTracks, ResponseGroupVariationImages, ResponseGroupVariations, ResponseGroupVariationSummary,
 	},
@@ -91,12 +87,15 @@ var ValidResponseGroup = map[string][]string{
 		ResponseGroupCart, ResponseGroupCartSimilarities,
 		ResponseGroupCartTopSellers, ResponseGroupCartNewReleases,
 	},
-	/*"Accessories", "AlternateVersions", "BrowseNodeInfo", "BrowseNodes", "Cart", "CartNewReleases",
-	"CartTopSellers", "CartSimilarities", "EditorialReview", "Images", "ItemAttributes", "ItemIds",
-	"Large", "Medium", "MostGifted", "MostWishedFor", "NewReleases", "OfferFull",
-	"OfferListings", "Offers", "OfferSummary", "PromotionSummary", "RelatedItems",
-	"Request", "Reviews", "SalesRank", "SearchBins", "Similarities", "Small", "TopSellers",
-	"Tracks", "Variations", "VariationImages", "VariationMatrix", "VariationOffers", "VariationSummary",*/
+	"CartGet": []string{
+		ResponseGroupCart, ResponseGroupCartSimilarities,
+		ResponseGroupCartTopSellers, ResponseGroupCartNewReleases,
+	},
+	"CartClear": []string{ResponseGroupCart},
+	"CartAdd": []string{ResponseGroupCart, ResponseGroupCartSimilarities,
+		ResponseGroupCartTopSellers, ResponseGroupCartNewReleases},
+	"CartModify": []string{ResponseGroupCart, ResponseGroupCartSimilarities,
+		ResponseGroupCartTopSellers, ResponseGroupCartNewReleases},
 }
 
 type Argument struct {
@@ -178,14 +177,21 @@ type BrowseNodeLookupRequest struct {
 }
 
 type CartItem struct {
+	Action         string 	   `xml:",omitempty" json:",omitempty"`
+	CartItemId     string      `xml:",omitempty" json:",omitempty"`
 	ASIN           string      `xml:",omitempty" json:",omitempty"`
-	AssociateTag   string      `xml:",omitempty" json:",omitempty"`
-	ListItemId     string      `xml:",omitempty" json:",omitempty"`
-	OfferListingId string      `xml:",omitempty" json:",omitempty"`
+	SellerNickname string      `xml:",omitempty" json:",omitempty"`
 	Quantity       string      `xml:",omitempty" json:",omitempty"`
+	Title          string      `xml:",omitempty" json:",omitempty"`
+	ProductGroup   string      `xml:",omitempty" json:",omitempty"`
+	Price          *Price      `xml:",omitempty" json:",omitempty"`
+	ItemTotal      *Price      `xml:",omitempty" json:",omitempty"`
 	MetaData       *[]MetaData `xml:",omitempty" json:",omitempty"`
 }
-type CartItems []CartItem
+type CartItems struct {
+	SubTotal *Price     `xml:",omitempty" json:",omitempty"`
+	CartItem []CartItem `xml:",omitempty" json:",omitempty"`
+}
 
 type CartCommon struct {
 	CartId        string   `xml:",omitempty" json:",omitempty"`
@@ -204,18 +210,16 @@ type CartClearRequest struct {
 	*CartCommon
 }
 
-type CartGetRequest struct {
-	*CartCommon
-}
-
 type CartModifyRequest struct {
 	*CartCommon
 	Items CartItems
 }
 
 type MetaData struct {
-	Key   string
-	Value string
+	KeyValuePair []struct {
+		Key   string `xml:",omitempty" json:",omitempty"`
+		Value string `xml:",omitempty" json:",omitempty"`
+	} `xml:",omitempty" json:",omitempty"`
 }
 
 type SimilarityLookupRequest struct {
