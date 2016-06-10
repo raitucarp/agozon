@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfferListing>
+  <OfferListingId>OfferListingId1</OfferListingId>
+  <PricePerUnit>PricePerUnit1</PricePerUnit>
+  <Price>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </Price>
+  <SalePrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </SalePrice>
+  <AmountSaved>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </AmountSaved>
+  <PercentageSaved>3</PercentageSaved>
+  <Availability>Availability1</Availability>
+  <AvailabilityAttributes>
+    <AvailabilityType>AvailabilityType1</AvailabilityType>
+    <IsPreorder>true</IsPreorder>
+    <MinimumHours>1</MinimumHours>
+    <MaximumHours>1</MaximumHours>
+  </AvailabilityAttributes>
+  <IsEligibleForSuperSaverShipping>true</IsEligibleForSuperSaverShipping>
+  <IsEligibleForPrimeFreeDigitalVideo>true</IsEligibleForPrimeFreeDigitalVideo>
+  <IsEligibleForPrime>true</IsEligibleForPrime>
+</OfferListing>

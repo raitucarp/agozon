@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bin>
+  <BinName>BinName1</BinName>
+  <BinItemCount>1</BinItemCount>
+  <BinParameter>
+    <Name>Name1</Name>
+    <Value>Value1</Value>
+  </BinParameter>
+  <BinParameter>
+    <Name>Name2</Name>
+    <Value>Value2</Value>
+  </BinParameter>
+  <BinParameter>
+    <Name>Name3</Name>
+    <Value>Value3</Value>
+  </BinParameter>
+</Bin>

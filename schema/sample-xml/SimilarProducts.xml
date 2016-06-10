@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimilarProducts>
+  <SimilarProduct>
+    <ASIN>ASIN1</ASIN>
+    <Title>Title1</Title>
+  </SimilarProduct>
+  <SimilarProduct>
+    <ASIN>ASIN2</ASIN>
+    <Title>Title2</Title>
+  </SimilarProduct>
+  <SimilarProduct>
+    <ASIN>ASIN3</ASIN>
+    <Title>Title3</Title>
+  </SimilarProduct>
+</SimilarProducts>

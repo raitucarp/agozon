@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Errors>
+  <Error>
+    <Code>Code1</Code>
+    <Message>Message1</Message>
+  </Error>
+  <Error>
+    <Code>Code2</Code>
+    <Message>Message2</Message>
+  </Error>
+  <Error>
+    <Code>Code3</Code>
+    <Message>Message3</Message>
+  </Error>
+</Errors>

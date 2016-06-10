@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RentalOffer>
+  <Merchant>
+    <Name>Name1</Name>
+  </Merchant>
+  <RentalListing>
+    <Price>
+      <Amount>1</Amount>
+      <CurrencyCode>CurrencyCode1</CurrencyCode>
+      <FormattedPrice>FormattedPrice1</FormattedPrice>
+    </Price>
+    <Period Units="Units1">0</Period>
+    <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+    <Disclaimer>Disclaimer1</Disclaimer>
+  </RentalListing>
+  <RentalListing>
+    <Price>
+      <Amount>-24</Amount>
+      <CurrencyCode>CurrencyCode2</CurrencyCode>
+      <FormattedPrice>FormattedPrice2</FormattedPrice>
+    </Price>
+    <Period Units="Units2">24</Period>
+    <Disclaimer>Disclaimer2</Disclaimer>
+  </RentalListing>
+  <RentalListing>
+    <Price>
+      <Amount>24</Amount>
+      <CurrencyCode>CurrencyCode3</CurrencyCode>
+      <FormattedPrice>FormattedPrice3</FormattedPrice>
+    </Price>
+    <Period Units="Units3">1</Period>
+    <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+    <Disclaimer>Disclaimer3</Disclaimer>
+  </RentalListing>
+</RentalOffer>

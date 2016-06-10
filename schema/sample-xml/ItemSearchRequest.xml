@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemSearchRequest>
+  <Actor>Actor1</Actor>
+  <Artist>Artist1</Artist>
+  <Availability>Available</Availability>
+  <AudienceRating>G</AudienceRating>
+  <AudienceRating>PG</AudienceRating>
+  <AudienceRating>PG-13</AudienceRating>
+  <Author>Author1</Author>
+  <Brand>Brand1</Brand>
+  <BrowseNode>BrowseNode1</BrowseNode>
+  <Composer>Composer1</Composer>
+  <Condition>All</Condition>
+  <Conductor>Conductor1</Conductor>
+  <Director>Director1</Director>
+  <ItemPage>1</ItemPage>
+  <Keywords>Keywords1</Keywords>
+  <Manufacturer>Manufacturer1</Manufacturer>
+  <MaximumPrice>4</MaximumPrice>
+  <MerchantId>MerchantId1</MerchantId>
+  <MinimumPrice>4</MinimumPrice>
+  <MinPercentageOff>4</MinPercentageOff>
+  <MusicLabel>MusicLabel1</MusicLabel>
+  <Orchestra>Orchestra1</Orchestra>
+  <Power>Power1</Power>
+  <Publisher>Publisher1</Publisher>
+  <RelatedItemPage>1</RelatedItemPage>
+  <RelationshipType>RelationshipType1</RelationshipType>
+  <RelationshipType>RelationshipType2</RelationshipType>
+  <RelationshipType>RelationshipType3</RelationshipType>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+  <SearchIndex>SearchIndex1</SearchIndex>
+  <Sort>Sort1</Sort>
+  <Title>Title1</Title>
+  <ReleaseDate>ReleaseDate1</ReleaseDate>
+  <IncludeReviewsSummary>IncludeReviewsSummary1</IncludeReviewsSummary>
+  <TruncateReviewsAt>4</TruncateReviewsAt>
+</ItemSearchRequest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CartGet>
+  <MarketplaceDomain>MarketplaceDomain1</MarketplaceDomain>
+  <AWSAccessKeyId>AWSAccessKeyId1</AWSAccessKeyId>
+  <AssociateTag>AssociateTag1</AssociateTag>
+  <Validate>Validate1</Validate>
+  <XMLEscaping>XMLEscaping1</XMLEscaping>
+  <Shared>
+    <CartId>CartId1</CartId>
+    <HMAC>HMAC1</HMAC>
+    <MergeCart>MergeCart1</MergeCart>
+    <ResponseGroup>ResponseGroup1</ResponseGroup>
+    <ResponseGroup>ResponseGroup2</ResponseGroup>
+    <ResponseGroup>ResponseGroup3</ResponseGroup>
+  </Shared>
+  <Request>
+    <CartId>CartId1</CartId>
+    <HMAC>HMAC1</HMAC>
+    <MergeCart>MergeCart1</MergeCart>
+    <ResponseGroup>ResponseGroup1</ResponseGroup>
+    <ResponseGroup>ResponseGroup2</ResponseGroup>
+    <ResponseGroup>ResponseGroup3</ResponseGroup>
+  </Request>
+  <Request>
+    <CartId>CartId2</CartId>
+    <HMAC>HMAC2</HMAC>
+    <MergeCart>MergeCart2</MergeCart>
+    <ResponseGroup>ResponseGroup4</ResponseGroup>
+    <ResponseGroup>ResponseGroup5</ResponseGroup>
+    <ResponseGroup>ResponseGroup6</ResponseGroup>
+  </Request>
+  <Request>
+    <CartId>CartId3</CartId>
+    <HMAC>HMAC3</HMAC>
+    <MergeCart>MergeCart3</MergeCart>
+    <ResponseGroup>ResponseGroup7</ResponseGroup>
+    <ResponseGroup>ResponseGroup8</ResponseGroup>
+    <ResponseGroup>ResponseGroup9</ResponseGroup>
+  </Request>
+</CartGet>

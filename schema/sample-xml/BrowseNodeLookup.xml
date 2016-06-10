@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BrowseNodeLookup>
+  <MarketplaceDomain>MarketplaceDomain1</MarketplaceDomain>
+  <AWSAccessKeyId>AWSAccessKeyId1</AWSAccessKeyId>
+  <AssociateTag>AssociateTag1</AssociateTag>
+  <Validate>Validate1</Validate>
+  <XMLEscaping>XMLEscaping1</XMLEscaping>
+  <Shared>
+    <BrowseNodeId>BrowseNodeId1</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId2</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId3</BrowseNodeId>
+    <ResponseGroup>ResponseGroup1</ResponseGroup>
+    <ResponseGroup>ResponseGroup2</ResponseGroup>
+    <ResponseGroup>ResponseGroup3</ResponseGroup>
+  </Shared>
+  <Request>
+    <BrowseNodeId>BrowseNodeId1</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId2</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId3</BrowseNodeId>
+    <ResponseGroup>ResponseGroup1</ResponseGroup>
+    <ResponseGroup>ResponseGroup2</ResponseGroup>
+    <ResponseGroup>ResponseGroup3</ResponseGroup>
+  </Request>
+  <Request>
+    <BrowseNodeId>BrowseNodeId4</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId5</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId6</BrowseNodeId>
+    <ResponseGroup>ResponseGroup4</ResponseGroup>
+    <ResponseGroup>ResponseGroup5</ResponseGroup>
+    <ResponseGroup>ResponseGroup6</ResponseGroup>
+  </Request>
+  <Request>
+    <BrowseNodeId>BrowseNodeId7</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId8</BrowseNodeId>
+    <BrowseNodeId>BrowseNodeId9</BrowseNodeId>
+    <ResponseGroup>ResponseGroup7</ResponseGroup>
+    <ResponseGroup>ResponseGroup8</ResponseGroup>
+    <ResponseGroup>ResponseGroup9</ResponseGroup>
+  </Request>
+</BrowseNodeLookup>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RentalListing>
+  <Price>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </Price>
+  <Period Units="Units1">0</Period>
+  <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+  <Disclaimer>Disclaimer1</Disclaimer>
+</RentalListing>

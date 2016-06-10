@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Accessories>
+  <Accessory>
+    <ASIN>ASIN1</ASIN>
+    <Title>Title1</Title>
+  </Accessory>
+  <Accessory>
+    <ASIN>ASIN2</ASIN>
+    <Title>Title2</Title>
+  </Accessory>
+  <Accessory>
+    <ASIN>ASIN3</ASIN>
+    <Title>Title3</Title>
+  </Accessory>
+</Accessories>

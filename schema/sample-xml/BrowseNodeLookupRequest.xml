@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BrowseNodeLookupRequest>
+  <BrowseNodeId>BrowseNodeId1</BrowseNodeId>
+  <BrowseNodeId>BrowseNodeId2</BrowseNodeId>
+  <BrowseNodeId>BrowseNodeId3</BrowseNodeId>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+</BrowseNodeLookupRequest>

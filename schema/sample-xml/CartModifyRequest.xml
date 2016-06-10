@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CartModifyRequest>
+  <CartId>CartId1</CartId>
+  <HMAC>HMAC1</HMAC>
+  <MergeCart>MergeCart1</MergeCart>
+  <Items>
+    <Item>
+      <Action>MoveToCart</Action>
+      <CartItemId>CartItemId1</CartItemId>
+    </Item>
+    <Item>
+      <Action>SaveForLater</Action>
+      <CartItemId>CartItemId2</CartItemId>
+      <Quantity>34</Quantity>
+    </Item>
+    <Item>
+      <Action>MoveToCart</Action>
+      <CartItemId>CartItemId3</CartItemId>
+      <Quantity>1</Quantity>
+    </Item>
+  </Items>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+</CartModifyRequest>

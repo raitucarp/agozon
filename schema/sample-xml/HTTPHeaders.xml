@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HTTPHeaders>
+  <Header Name="Name1" Value="Value1" />
+  <Header Name="Name2" Value="Value2" />
+  <Header Name="Name3" Value="Value3" />
+</HTTPHeaders>

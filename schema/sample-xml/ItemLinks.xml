@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemLinks>
+  <ItemLink>
+    <Description>Description1</Description>
+    <URL>URL1</URL>
+  </ItemLink>
+  <ItemLink>
+    <Description>Description2</Description>
+    <URL>URL2</URL>
+  </ItemLink>
+  <ItemLink>
+    <Description>Description3</Description>
+    <URL>URL3</URL>
+  </ItemLink>
+</ItemLinks>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemLookupRequest>
+  <Condition>All</Condition>
+  <IdType>ASIN</IdType>
+  <MerchantId>MerchantId1</MerchantId>
+  <ItemId>ItemId1</ItemId>
+  <ItemId>ItemId2</ItemId>
+  <ItemId>ItemId3</ItemId>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+  <SearchIndex>SearchIndex1</SearchIndex>
+  <VariationPage>1</VariationPage>
+  <RelatedItemPage>1</RelatedItemPage>
+  <RelationshipType>RelationshipType1</RelationshipType>
+  <RelationshipType>RelationshipType2</RelationshipType>
+  <RelationshipType>RelationshipType3</RelationshipType>
+  <IncludeReviewsSummary>IncludeReviewsSummary1</IncludeReviewsSummary>
+</ItemLookupRequest>

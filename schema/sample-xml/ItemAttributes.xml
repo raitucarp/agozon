@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemAttributes>
+  <Actor>Actor1</Actor>
+  <Actor>Actor2</Actor>
+  <Actor>Actor3</Actor>
+  <Artist>Artist1</Artist>
+  <Artist>Artist2</Artist>
+  <Artist>Artist3</Artist>
+  <AspectRatio>AspectRatio1</AspectRatio>
+  <AudienceRating>AudienceRating1</AudienceRating>
+  <AudioFormat>AudioFormat1</AudioFormat>
+  <AudioFormat>AudioFormat2</AudioFormat>
+  <AudioFormat>AudioFormat3</AudioFormat>
+  <Author>Author1</Author>
+  <Author>Author2</Author>
+  <Author>Author3</Author>
+  <Binding>Binding1</Binding>
+  <Brand>Brand1</Brand>
+  <CatalogNumberList>
+    <CatalogNumberList>CatalogNumberList1</CatalogNumberList>
+    <CatalogNumberList>CatalogNumberList2</CatalogNumberList>
+    <CatalogNumberList>CatalogNumberList3</CatalogNumberList>
+  </CatalogNumberList>
+  <Category>Category1</Category>
+  <Category>Category2</Category>
+  <Category>Category3</Category>
+  <CEROAgeRating>CEROAgeRating1</CEROAgeRating>
+  <ClothingSize>ClothingSize1</ClothingSize>
+  <Color>Color1</Color>
+  <Creator Role="Role1">Creator1</Creator>
+  <Creator Role="Role2">Creator2</Creator>
+  <Creator Role="Role3">Creator3</Creator>
+  <Department>Department1</Department>
+  <Director>Director1</Director>
+  <Director>Director2</Director>
+  <Director>Director3</Director>
+  <EAN>EAN1</EAN>
+  <EANList>
+    <EANList>EANList1</EANList>
+    <EANList>EANList2</EANList>
+    <EANList>EANList3</EANList>
+  </EANList>
+  <Edition>Edition1</Edition>
+  <EISBN>EISBN1</EISBN>
+  <EISBN>EISBN2</EISBN>
+  <EISBN>EISBN3</EISBN>
+  <EnergyEfficiencyClass>EnergyEfficiencyClass1</EnergyEfficiencyClass>
+  <EpisodeSequence>EpisodeSequence1</EpisodeSequence>
+  <ESRBAgeRating>ESRBAgeRating1</ESRBAgeRating>
+  <Feature>Feature1</Feature>
+  <Feature>Feature2</Feature>
+  <Feature>Feature3</Feature>
+  <Format>Format1</Format>
+  <Format>Format2</Format>
+  <Format>Format3</Format>
+  <Genre>Genre1</Genre>
+  <HardwarePlatform>HardwarePlatform1</HardwarePlatform>
+  <HazardousMaterialType>HazardousMaterialType1</HazardousMaterialType>
+  <IsAdultProduct>true</IsAdultProduct>
+  <IsAutographed>true</IsAutographed>
+  <ISBN>ISBN1</ISBN>
+  <IsEligibleForTradeIn>true</IsEligibleForTradeIn>
+  <IsMemorabilia>true</IsMemorabilia>
+  <IssuesPerYear>IssuesPerYear1</IssuesPerYear>
+  <ItemDimensions>
+    <Height Units="Units1">1</Height>
+    <Length Units="Units1">1</Length>
+    <Weight Units="Units1">1</Weight>
+    <Width Units="Units1">1</Width>
+  </ItemDimensions>
+  <ItemPartNumber>ItemPartNumber1</ItemPartNumber>
+  <Label>Label1</Label>
+  <Languages>
+    <Language>
+      <Name>Name1</Name>
+      <Type>Type1</Type>
+      <AudioFormat>AudioFormat1</AudioFormat>
+    </Language>
+    <Language>
+      <Name>Name2</Name>
+      <Type>Type2</Type>
+      <AudioFormat>AudioFormat2</AudioFormat>
+    </Language>
+    <Language>
+      <Name>Name3</Name>
+      <Type>Type3</Type>
+      <AudioFormat>AudioFormat3</AudioFormat>
+    </Language>
+  </Languages>
+  <LegalDisclaimer>LegalDisclaimer1</LegalDisclaimer>
+  <ListPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </ListPrice>
+  <MagazineType>MagazineType1</MagazineType>
+  <Manufacturer>Manufacturer1</Manufacturer>
+  <ManufacturerMaximumAge Units="Units1">1</ManufacturerMaximumAge>
+  <ManufacturerMinimumAge Units="Units1">1</ManufacturerMinimumAge>
+  <ManufacturerPartsWarrantyDescription>ManufacturerPartsWarrantyDescription1</ManufacturerPartsWarrantyDescription>
+  <MediaType>MediaType1</MediaType>
+  <Model>Model1</Model>
+  <ModelYear>3</ModelYear>
+  <MPN>MPN1</MPN>
+  <NumberOfDiscs>3</NumberOfDiscs>
+  <NumberOfIssues>3</NumberOfIssues>
+  <NumberOfItems>3</NumberOfItems>
+  <NumberOfPages>3</NumberOfPages>
+  <NumberOfTracks>3</NumberOfTracks>
+  <OperatingSystem>OperatingSystem1</OperatingSystem>
+  <PackageDimensions>
+    <Height Units="Units1">1</Height>
+    <Length Units="Units1">1</Length>
+    <Weight Units="Units1">1</Weight>
+    <Width Units="Units1">1</Width>
+  </PackageDimensions>
+  <PackageQuantity>3</PackageQuantity>
+  <PartNumber>PartNumber1</PartNumber>
+  <PictureFormat>PictureFormat1</PictureFormat>
+  <PictureFormat>PictureFormat2</PictureFormat>
+  <PictureFormat>PictureFormat3</PictureFormat>
+  <Platform>Platform1</Platform>
+  <Platform>Platform2</Platform>
+  <Platform>Platform3</Platform>
+  <ProductGroup>ProductGroup1</ProductGroup>
+  <ProductTypeName>ProductTypeName1</ProductTypeName>
+  <ProductTypeSubcategory>ProductTypeSubcategory1</ProductTypeSubcategory>
+  <PublicationDate>PublicationDate1</PublicationDate>
+  <Publisher>Publisher1</Publisher>
+  <RegionCode>RegionCode1</RegionCode>
+  <ReleaseDate>ReleaseDate1</ReleaseDate>
+  <SeasonSequence>SeasonSequence1</SeasonSequence>
+  <RunningTime Units="Units1">1</RunningTime>
+  <SeikodoProductCode>SeikodoProductCode1</SeikodoProductCode>
+  <Size>Size1</Size>
+  <SKU>SKU1</SKU>
+  <Studio>Studio1</Studio>
+  <SubscriptionLength Units="Units1">3</SubscriptionLength>
+  <Title>Title1</Title>
+  <TrackSequence>TrackSequence1</TrackSequence>
+  <TradeInValue>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </TradeInValue>
+  <UPC>UPC1</UPC>
+  <UPCList>
+    <UPCList>UPCList1</UPCList>
+    <UPCList>UPCList2</UPCList>
+    <UPCList>UPCList3</UPCList>
+  </UPCList>
+  <Warranty>Warranty1</Warranty>
+  <WEEETaxValue>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </WEEETaxValue>
+</ItemAttributes>

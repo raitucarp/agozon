@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CartClearRequest>
+  <CartId>CartId1</CartId>
+  <HMAC>HMAC1</HMAC>
+  <MergeCart>MergeCart1</MergeCart>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+</CartClearRequest>

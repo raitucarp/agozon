@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageSet Category="Category1">
+  <SwatchImage>
+    <URL>URL1</URL>
+    <Height Units="Units1">1</Height>
+    <Width Units="Units1">1</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </SwatchImage>
+  <SmallImage>
+    <URL>URL1</URL>
+    <Height Units="Units2">34</Height>
+    <Width Units="Units2">34</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </SmallImage>
+  <ThumbnailImage>
+    <URL>URL1</URL>
+    <Height Units="Units3">34</Height>
+    <Width Units="Units3">34</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </ThumbnailImage>
+  <TinyImage>
+    <URL>URL1</URL>
+    <Height Units="Units4">0.9</Height>
+    <Width Units="Units4">0.9</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </TinyImage>
+  <MediumImage>
+    <URL>URL1</URL>
+    <Height Units="Units5">1.1</Height>
+    <Width Units="Units5">1.1</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </MediumImage>
+  <LargeImage>
+    <URL>URL1</URL>
+    <Height Units="Units6">34</Height>
+    <Width Units="Units6">34</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </LargeImage>
+  <HiResImage>
+    <URL>URL1</URL>
+    <Height Units="Units7">34</Height>
+    <Width Units="Units7">34</Width>
+    <IsVerified>IsVerified1</IsVerified>
+  </HiResImage>
+</ImageSet>

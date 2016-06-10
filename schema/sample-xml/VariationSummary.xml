@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VariationSummary>
+  <LowestPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestPrice>
+  <HighestPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </HighestPrice>
+  <LowestSalePrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestSalePrice>
+  <HighestSalePrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </HighestSalePrice>
+</VariationSummary>

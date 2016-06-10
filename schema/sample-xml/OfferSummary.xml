@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfferSummary>
+  <LowestNewPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestNewPrice>
+  <LowestUsedPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestUsedPrice>
+  <LowestCollectiblePrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestCollectiblePrice>
+  <LowestRefurbishedPrice>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </LowestRefurbishedPrice>
+  <TotalNew>TotalNew1</TotalNew>
+  <TotalUsed>TotalUsed1</TotalUsed>
+  <TotalCollectible>TotalCollectible1</TotalCollectible>
+  <TotalRefurbished>TotalRefurbished1</TotalRefurbished>
+</OfferSummary>

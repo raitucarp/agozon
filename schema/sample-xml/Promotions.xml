@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Promotions>
+  <Promotion>
+    <Summary>
+      <PromotionId>PromotionId1</PromotionId>
+      <Message>Message1</Message>
+      <Category>Category1</Category>
+      <StartDate>StartDate1</StartDate>
+      <EndDate>EndDate1</EndDate>
+      <EligibilityRequirementDescription>EligibilityRequirementDescription1</EligibilityRequirementDescription>
+      <BenefitDescription>BenefitDescription1</BenefitDescription>
+      <TermsAndConditions>TermsAndConditions1</TermsAndConditions>
+    </Summary>
+  </Promotion>
+  <Promotion>
+    <Summary>
+      <PromotionId>PromotionId2</PromotionId>
+      <Message>Message2</Message>
+      <Category>Category2</Category>
+      <StartDate>StartDate2</StartDate>
+      <EndDate>EndDate2</EndDate>
+      <EligibilityRequirementDescription>EligibilityRequirementDescription2</EligibilityRequirementDescription>
+      <BenefitDescription>BenefitDescription2</BenefitDescription>
+      <TermsAndConditions>TermsAndConditions2</TermsAndConditions>
+    </Summary>
+  </Promotion>
+  <Promotion>
+    <Summary>
+      <PromotionId>PromotionId3</PromotionId>
+      <Message>Message3</Message>
+      <Category>Category3</Category>
+      <StartDate>StartDate3</StartDate>
+      <EndDate>EndDate3</EndDate>
+      <EligibilityRequirementDescription>EligibilityRequirementDescription3</EligibilityRequirementDescription>
+      <BenefitDescription>BenefitDescription3</BenefitDescription>
+      <TermsAndConditions>TermsAndConditions3</TermsAndConditions>
+    </Summary>
+  </Promotion>
+</Promotions>

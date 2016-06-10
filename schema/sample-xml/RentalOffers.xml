@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RentalOffers>
+  <RentalOffer>
+    <Merchant>
+      <Name>Name1</Name>
+    </Merchant>
+    <RentalListing>
+      <Price>
+        <Amount>1</Amount>
+        <CurrencyCode>CurrencyCode1</CurrencyCode>
+        <FormattedPrice>FormattedPrice1</FormattedPrice>
+      </Price>
+      <Period Units="Units1">0</Period>
+      <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+      <Disclaimer>Disclaimer1</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>-24</Amount>
+        <CurrencyCode>CurrencyCode2</CurrencyCode>
+        <FormattedPrice>FormattedPrice2</FormattedPrice>
+      </Price>
+      <Period Units="Units2">24</Period>
+      <Disclaimer>Disclaimer2</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>24</Amount>
+        <CurrencyCode>CurrencyCode3</CurrencyCode>
+        <FormattedPrice>FormattedPrice3</FormattedPrice>
+      </Price>
+      <Period Units="Units3">1</Period>
+      <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+      <Disclaimer>Disclaimer3</Disclaimer>
+    </RentalListing>
+  </RentalOffer>
+  <RentalOffer>
+    <Merchant>
+      <Name>Name2</Name>
+    </Merchant>
+    <RentalListing>
+      <Price>
+        <Amount>43</Amount>
+        <CurrencyCode>CurrencyCode4</CurrencyCode>
+        <FormattedPrice>FormattedPrice4</FormattedPrice>
+      </Price>
+      <Period Units="Units4">24</Period>
+      <Disclaimer>Disclaimer4</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>2</Amount>
+        <CurrencyCode>CurrencyCode5</CurrencyCode>
+        <FormattedPrice>FormattedPrice5</FormattedPrice>
+      </Price>
+      <Period Units="Units5">2</Period>
+      <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+      <Disclaimer>Disclaimer5</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>-24</Amount>
+        <CurrencyCode>CurrencyCode6</CurrencyCode>
+        <FormattedPrice>FormattedPrice6</FormattedPrice>
+      </Price>
+      <Period Units="Units6">24</Period>
+      <Disclaimer>Disclaimer6</Disclaimer>
+    </RentalListing>
+  </RentalOffer>
+  <RentalOffer>
+    <Merchant>
+      <Name>Name3</Name>
+    </Merchant>
+    <RentalListing>
+      <Price>
+        <Amount>24</Amount>
+        <CurrencyCode>CurrencyCode7</CurrencyCode>
+        <FormattedPrice>FormattedPrice7</FormattedPrice>
+      </Price>
+      <Period Units="Units7">3</Period>
+      <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+      <Disclaimer>Disclaimer7</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>-1</Amount>
+        <CurrencyCode>CurrencyCode8</CurrencyCode>
+        <FormattedPrice>FormattedPrice8</FormattedPrice>
+      </Price>
+      <Period Units="Units8">24</Period>
+      <Disclaimer>Disclaimer8</Disclaimer>
+    </RentalListing>
+    <RentalListing>
+      <Price>
+        <Amount>3</Amount>
+        <CurrencyCode>CurrencyCode9</CurrencyCode>
+        <FormattedPrice>FormattedPrice9</FormattedPrice>
+      </Price>
+      <Period Units="Units9">4</Period>
+      <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
+      <Disclaimer>Disclaimer9</Disclaimer>
+    </RentalListing>
+  </RentalOffer>
+</RentalOffers>

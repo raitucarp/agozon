@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimilarityLookupRequest>
+  <Condition>All</Condition>
+  <ItemId>ItemId1</ItemId>
+  <ItemId>ItemId2</ItemId>
+  <ItemId>ItemId3</ItemId>
+  <MerchantId>MerchantId1</MerchantId>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+  <SimilarityType>Intersection</SimilarityType>
+</SimilarityLookupRequest>

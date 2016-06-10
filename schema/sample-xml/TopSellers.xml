@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TopSellers>
+  <TopSeller>
+    <ASIN>ASIN1</ASIN>
+    <Title>Title1</Title>
+  </TopSeller>
+  <TopSeller>
+    <ASIN>ASIN2</ASIN>
+    <Title>Title2</Title>
+  </TopSeller>
+  <TopSeller>
+    <ASIN>ASIN3</ASIN>
+    <Title>Title3</Title>
+  </TopSeller>
+</TopSellers>

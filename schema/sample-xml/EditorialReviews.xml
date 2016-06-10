@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditorialReviews>
+  <EditorialReview>
+    <Source>Source1</Source>
+    <Content>Content1</Content>
+    <IsLinkSuppressed>true</IsLinkSuppressed>
+  </EditorialReview>
+  <EditorialReview>
+    <Source>Source2</Source>
+    <Content>Content2</Content>
+  </EditorialReview>
+  <EditorialReview>
+    <Source>Source3</Source>
+    <Content>Content3</Content>
+    <IsLinkSuppressed>true</IsLinkSuppressed>
+  </EditorialReview>
+</EditorialReviews>

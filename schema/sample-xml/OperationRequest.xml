@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OperationRequest>
+  <HTTPHeaders>
+    <Header Name="Name1" Value="Value1" />
+    <Header Name="Name2" Value="Value2" />
+    <Header Name="Name3" Value="Value3" />
+  </HTTPHeaders>
+  <RequestId>RequestId1</RequestId>
+  <Arguments>
+    <Argument Name="Name1" Value="Value1" />
+    <Argument Name="Name2" Value="Value2" />
+    <Argument Name="Name3" Value="Value3" />
+  </Arguments>
+  <Errors>
+    <Error>
+      <Code>Code1</Code>
+      <Message>Message1</Message>
+    </Error>
+    <Error>
+      <Code>Code2</Code>
+      <Message>Message2</Message>
+    </Error>
+    <Error>
+      <Code>Code3</Code>
+      <Message>Message3</Message>
+    </Error>
+  </Errors>
+  <RequestProcessingTime>1</RequestProcessingTime>
+</OperationRequest>

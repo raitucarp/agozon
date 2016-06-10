@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchResultsMap>
+  <SearchIndex>
+    <IndexName>IndexName1</IndexName>
+    <Results>4</Results>
+    <Pages>4</Pages>
+    <CorrectedQuery>
+      <Keywords>Keywords1</Keywords>
+      <Message>Message1</Message>
+    </CorrectedQuery>
+    <RelevanceRank>1</RelevanceRank>
+    <ASIN>ASIN1</ASIN>
+    <ASIN>ASIN2</ASIN>
+    <ASIN>ASIN3</ASIN>
+  </SearchIndex>
+  <SearchIndex>
+    <IndexName>IndexName2</IndexName>
+    <Results>72</Results>
+    <Pages>72</Pages>
+    <CorrectedQuery>
+      <Keywords>Keywords2</Keywords>
+      <Message>Message2</Message>
+    </CorrectedQuery>
+    <RelevanceRank>72</RelevanceRank>
+    <ASIN>ASIN4</ASIN>
+    <ASIN>ASIN5</ASIN>
+    <ASIN>ASIN6</ASIN>
+  </SearchIndex>
+  <SearchIndex>
+    <IndexName>IndexName3</IndexName>
+    <Results>1</Results>
+    <Pages>1</Pages>
+    <CorrectedQuery>
+      <Keywords>Keywords3</Keywords>
+      <Message>Message3</Message>
+    </CorrectedQuery>
+    <RelevanceRank>2</RelevanceRank>
+    <ASIN>ASIN7</ASIN>
+    <ASIN>ASIN8</ASIN>
+    <ASIN>ASIN9</ASIN>
+  </SearchIndex>
+</SearchResultsMap>

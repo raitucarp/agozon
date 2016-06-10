@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tracks>
+  <Disc Number="1">
+    <Track Number="1">Track1</Track>
+    <Track Number="21">Track2</Track>
+    <Track Number="2">Track3</Track>
+  </Disc>
+  <Disc Number="21">
+    <Track Number="21">Track4</Track>
+    <Track Number="3">Track5</Track>
+    <Track Number="21">Track6</Track>
+  </Disc>
+  <Disc Number="2">
+    <Track Number="4">Track7</Track>
+    <Track Number="21">Track8</Track>
+    <Track Number="5">Track9</Track>
+  </Disc>
+</Tracks>

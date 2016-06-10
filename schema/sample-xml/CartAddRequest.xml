@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CartAddRequest>
+  <CartId>CartId1</CartId>
+  <HMAC>HMAC1</HMAC>
+  <MergeCart>MergeCart1</MergeCart>
+  <Items>
+    <Item>
+      <ASIN>ASIN1</ASIN>
+      <OfferListingId>OfferListingId1</OfferListingId>
+      <Quantity>1</Quantity>
+      <AssociateTag>AssociateTag1</AssociateTag>
+      <ListItemId>ListItemId1</ListItemId>
+    </Item>
+    <Item>
+      <ASIN>ASIN2</ASIN>
+      <OfferListingId>OfferListingId2</OfferListingId>
+      <Quantity>8</Quantity>
+      <AssociateTag>AssociateTag2</AssociateTag>
+      <ListItemId>ListItemId2</ListItemId>
+    </Item>
+    <Item>
+      <ASIN>ASIN3</ASIN>
+      <OfferListingId>OfferListingId3</OfferListingId>
+      <Quantity>2</Quantity>
+      <AssociateTag>AssociateTag3</AssociateTag>
+      <ListItemId>ListItemId3</ListItemId>
+    </Item>
+  </Items>
+  <ResponseGroup>ResponseGroup1</ResponseGroup>
+  <ResponseGroup>ResponseGroup2</ResponseGroup>
+  <ResponseGroup>ResponseGroup3</ResponseGroup>
+</CartAddRequest>

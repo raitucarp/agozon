@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CartItem>
+  <CartItemId>CartItemId1</CartItemId>
+  <ASIN>ASIN1</ASIN>
+  <SellerNickname>SellerNickname1</SellerNickname>
+  <Quantity>Quantity1</Quantity>
+  <Title>Title1</Title>
+  <ProductGroup>ProductGroup1</ProductGroup>
+  <MetaData>
+    <KeyValuePair>
+      <Key>Key1</Key>
+      <Value>Value1</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+      <Key>Key2</Key>
+      <Value>Value2</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+      <Key>Key3</Key>
+      <Value>Value3</Value>
+    </KeyValuePair>
+  </MetaData>
+  <Price>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </Price>
+  <ItemTotal>
+    <Amount>1</Amount>
+    <CurrencyCode>CurrencyCode1</CurrencyCode>
+    <FormattedPrice>FormattedPrice1</FormattedPrice>
+  </ItemTotal>
+</CartItem>

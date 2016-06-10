@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arguments>
+  <Argument Name="Name1" Value="Value1" />
+  <Argument Name="Name2" Value="Value2" />
+  <Argument Name="Name3" Value="Value3" />
+</Arguments>
